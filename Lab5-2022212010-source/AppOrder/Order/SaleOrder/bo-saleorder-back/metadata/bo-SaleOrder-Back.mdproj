@@ -1,0 +1,46 @@
+{
+  "NameSpace" : "Inspur.GS.AppOrder.Order.SaleOrder.SaleOrder.Back",
+  "Name" : "bo-SaleOrder-Back",
+  "ProjectFileName" : "bo-SaleOrder-Back.mdproj",
+  "ProjectPath" : "D:/openigix_2207_x86_64_nightly20220905/projects/AppOrder/Order/SaleOrder/bo-saleorder-back/metadata",
+  "MetadataPackageInfo" : {
+    "Name" : "Inspur.GS.AppOrder.Order.SaleOrder.SaleOrder.Back",
+    "Version" : {
+      "VersionInt" : null,
+      "VersionString" : "1.0.0"
+    },
+    "Location" : null,
+    "ProcessMode" : "interpretation"
+  },
+  "MetadataPackageRefs" : [ ],
+  "ProjectRefs" : null,
+  "ExternalRefs" : null,
+  "MdpkgRefs" : [ {
+    "Name" : "Inspur.GS.AppOrder.DF.Merchant.Merchant.Back",
+    "Version" : {
+      "VersionInt" : null,
+      "VersionString" : "1.0.0"
+    },
+    "Location" : null,
+    "ProcessMode" : "interpretation"
+  }, {
+    "Name" : "Inspur.GS.AppOrder.DF.Goods.Goods.Back",
+    "Version" : {
+      "VersionInt" : null,
+      "VersionString" : "1.0.0"
+    },
+    "Location" : null,
+    "ProcessMode" : "interpretation"
+  }, {
+    "Name" : "Inspur.GS.AppOrder.DF.Employee.Employee.Back",
+    "Version" : {
+      "VersionInt" : null,
+      "VersionString" : "1.0.0"
+    },
+    "Location" : null,
+    "ProcessMode" : "interpretation"
+  } ],
+  "MavenPackageRefs" : [ ],
+  "CsprojAssemblyName" : "Inspur.GS.AppOrder.Order.SaleOrder.SaleOrder.Back",
+  "ID" : "5cdf60f8-7c83-4cfe-9d0b-69340c1c072e"
+}

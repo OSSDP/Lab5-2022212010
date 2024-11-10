@@ -1,0 +1,11 @@
+{
+  "name": "@farris/jit-engine",
+  "version": "0.0.27",
+  "description": "npm auto install",
+  "keywords": [],
+  "author": "Noah",
+  "license": "ISC",
+  "scripts": {
+    "build":"ng build"
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "AppCode" : "AppOrder",
+  "ServiceUnitCode" : "Order",
+  "BizobjectCode" : "SaleOrder",
+  "BizobjectID" : "110200f5-ac63-a59d-8b68-324ba954cd9d",
+  "ProjectNameSpace" : "Inspur.GS.AppOrder.Order.SaleOrder.SaleOrder.Back",
+  "SuDeploymentPath" : "apps/apporder/order",
+  "MetadataProjectName" : "bo-SaleOrder-Back",
+  "MetadataPackageName" : "Inspur.GS.AppOrder.Order.SaleOrder.SaleOrder.Back",
+  "SuConfigDeploymentPath" : null,
+  "ProjectType" : "backend",
+  "ProjectExtendItem" : [ {
+    "codelanguage" : "java"
+  } ]
+}

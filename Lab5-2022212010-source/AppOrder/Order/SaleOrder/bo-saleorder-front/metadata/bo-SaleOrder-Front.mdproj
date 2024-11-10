@@ -1,0 +1,70 @@
+{
+  "NameSpace" : "Inspur.GS.AppOrder.Order.SaleOrder.SaleOrder.Front",
+  "Name" : "bo-SaleOrder-Front",
+  "ProjectFileName" : "bo-SaleOrder-Front.mdproj",
+  "ProjectPath" : "D:/openigix_2207_x86_64_nightly20220905/projects/AppOrder/Order/SaleOrder/bo-saleorder-front/metadata",
+  "MetadataPackageInfo" : {
+    "Name" : "Inspur.GS.AppOrder.Order.SaleOrder.SaleOrder.Front",
+    "Version" : {
+      "VersionInt" : null,
+      "VersionString" : "1.0.0"
+    },
+    "Location" : null,
+    "ProcessMode" : "interpretation"
+  },
+  "MetadataPackageRefs" : [ {
+    "Name" : "Inspur.GS.AppOrder.Order.SaleOrder.SaleOrder.Back",
+    "Version" : {
+      "VersionInt" : null,
+      "VersionString" : "1.0.0"
+    },
+    "Location" : null,
+    "ProcessMode" : "interpretation"
+  } ],
+  "ProjectRefs" : [ {
+    "Name" : "Inspur.GS.AppOrder.Order.SaleOrder.SaleOrder.Back",
+    "ProjectPath" : "..\\bo-saleorder-back"
+  } ],
+  "ExternalRefs" : null,
+  "MdpkgRefs" : [ {
+    "Name" : "Inspur.GS.Gsp.Web.WebCmp",
+    "Version" : {
+      "VersionInt" : null,
+      "VersionString" : "1.0.0"
+    },
+    "Location" : null,
+    "ProcessMode" : "generation"
+  }, {
+    "Name" : "Inspur.GS.AppOrder.DF.Employee.Employee.Front",
+    "Version" : {
+      "VersionInt" : null,
+      "VersionString" : "1.0.0"
+    },
+    "Location" : null,
+    "ProcessMode" : "interpretation"
+  }, {
+    "Name" : "Inspur.GS.AppOrder.DF.Merchant.Merchant.Front",
+    "Version" : {
+      "VersionInt" : null,
+      "VersionString" : "1.0.0"
+    },
+    "Location" : null,
+    "ProcessMode" : "interpretation"
+  }, {
+    "Name" : "Inspur.GS.AppOrder.DF.Goods.Goods.Front",
+    "Version" : {
+      "VersionInt" : null,
+      "VersionString" : "1.0.0"
+    },
+    "Location" : null,
+    "ProcessMode" : "interpretation"
+  } ],
+  "MavenPackageRefs" : [ {
+    "GroupId" : "com.inspur.gs",
+    "ArtifactId" : "apporder-order-saleorder-saleorder-back-api",
+    "Version" : "m0.1.0-SNAPSHOT",
+    "MetadataPackageName" : "Inspur.GS.AppOrder.Order.SaleOrder.SaleOrder.Back"
+  } ],
+  "CsprojAssemblyName" : "Inspur.GS.AppOrder.Order.SaleOrder.SaleOrder.Front",
+  "ID" : "c9bf3ae8-19c2-4eaa-9e11-f148d4095826"
+}

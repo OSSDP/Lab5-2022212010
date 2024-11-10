@@ -1,0 +1,782 @@
+{
+  "Header" : {
+    "Code" : "SaleOrderCard_frm",
+    "Type" : "GSPViewModel",
+    "NameSpace" : "Inspur.GS.AppOrder.Order.SaleOrder.SaleOrder.Front",
+    "CertId" : null,
+    "Name" : "订单维护_frm",
+    "FileName" : "SaleOrderCard_frm.vo",
+    "BizobjectID" : "110200f5-ac63-a59d-8b68-324ba954cd9d",
+    "Language" : null,
+    "Extendable" : false,
+    "ID" : "ad12fca3-caa8-427d-a1ee-f1ce13d7b9ee",
+    "IsTranslating" : false
+  },
+  "Refs" : [ {
+    "DependentMetadata" : {
+      "ID" : "aa3b3e82-8530-4ba9-8a77-fdcbd372f2fe",
+      "CertId" : null,
+      "NameSpace" : "Inspur.GS.AppOrder.Order.SaleOrder.SaleOrder.Back",
+      "Code" : "SaleOrder",
+      "Name" : "业务订单",
+      "Type" : "GSPBusinessEntity",
+      "BizobjectID" : "110200f5-ac63-a59d-8b68-324ba954cd9d"
+    }
+  }, {
+    "DependentMetadata" : {
+      "ID" : "8d67f752-3670-4d77-b991-cc5841c8d501",
+      "CertId" : null,
+      "NameSpace" : "Inspur.GS.AppOrder.Order.SaleOrder.SaleOrder.Front",
+      "Code" : "SaleOrderCard_frm.vo",
+      "Name" : "SaleOrderCard_frm.vo",
+      "Type" : "ResourceMetadata",
+      "BizobjectID" : "110200f5-ac63-a59d-8b68-324ba954cd9d"
+    }
+  } ],
+  "Content" : {
+    "ID" : "ad12fca3-caa8-427d-a1ee-f1ce13d7b9ee",
+    "Code" : "SaleOrderCard_frm",
+    "Name" : "订单维护_frm",
+    "GeneratingAssembly" : "Inspur.GS.AppOrder.Order.SaleOrder.SaleOrder.Front.Vo",
+    "IsUseNamespaceConfig" : true,
+    "IsSimplifyGen" : true,
+    "MainObject" : {
+      "ID" : "533d0acd-fc75-40c2-9ed7-b01243a15b2d",
+      "Code" : "SaleOrder",
+      "Name" : "业务订单",
+      "I18nResourceInfoPrefix" : "Inspur.GS.AppOrder.Order.SaleOrder.SaleOrder.Front.Vo.SaleOrderCard_frm.SaleOrder",
+      "ContainElements" : [ {
+        "ID" : "9fdf7d62-a967-41fd-bcb7-881894ccd23b",
+        "LabelID" : "ID",
+        "ChildAssociations" : [ ],
+        "Code" : "ID",
+        "Name" : "主键",
+        "MDataType" : "String",
+        "Length" : 36,
+        "IsRequire" : true,
+        "EnableRtrim" : true,
+        "Mapping" : {
+          "MapType" : "Element",
+          "TargetMetadataId" : "aa3b3e82-8530-4ba9-8a77-fdcbd372f2fe",
+          "TargetObjId" : "7a27ef7f-83fd-4dda-b4a1-1964cc1ec5ee",
+          "TargetObjectId" : "e2cba429-c95c-4867-a0a1-d511600a6f9a",
+          "TargetElementId" : "7a27ef7f-83fd-4dda-b4a1-1964cc1ec5ee"
+        }
+      }, {
+        "ID" : "0d39b9e8-0c71-4fce-b39a-287cda2ecc06",
+        "LabelID" : "Version",
+        "ChildAssociations" : [ ],
+        "Code" : "Version",
+        "Name" : "版本",
+        "MDataType" : "DateTime",
+        "EnableRtrim" : true,
+        "Mapping" : {
+          "MapType" : "Element",
+          "TargetMetadataId" : "aa3b3e82-8530-4ba9-8a77-fdcbd372f2fe",
+          "TargetObjId" : "b80dc51f-0c2e-468d-a5c8-5a356324d0b5",
+          "TargetObjectId" : "e2cba429-c95c-4867-a0a1-d511600a6f9a",
+          "TargetElementId" : "b80dc51f-0c2e-468d-a5c8-5a356324d0b5"
+        }
+      }, {
+        "ID" : "1c8bd21f-170d-49d3-a5cf-89f7e1cf06a7",
+        "LabelID" : "OrderCode",
+        "ChildAssociations" : [ ],
+        "Code" : "OrderCode",
+        "Name" : "订单编号",
+        "MDataType" : "String",
+        "Length" : 36,
+        "EnableRtrim" : true,
+        "Mapping" : {
+          "MapType" : "Element",
+          "TargetMetadataId" : "aa3b3e82-8530-4ba9-8a77-fdcbd372f2fe",
+          "TargetObjId" : "0dff6cae-f888-430d-b0c9-836177183c87",
+          "TargetObjectId" : "e2cba429-c95c-4867-a0a1-d511600a6f9a",
+          "TargetElementId" : "0dff6cae-f888-430d-b0c9-836177183c87"
+        }
+      }, {
+        "ID" : "f2cea256-5859-4e32-8f46-ff580505f2ff",
+        "LabelID" : "Merchant",
+        "ChildAssociations" : [ {
+          "ID" : "3c7ea746-4ea5-4c4e-a38d-5c1d04451a26",
+          "RefElementCollection" : [ {
+            "ID" : "b27406c8-a01c-4a2c-bdd2-585f3268673e",
+            "LabelID" : "Merchant_MerchantName",
+            "ChildAssociations" : [ ],
+            "Code" : "MerchantName",
+            "Name" : "商户名称",
+            "MDataType" : "String",
+            "Length" : 36,
+            "IsRefElement" : true,
+            "RefElementID" : "910cdc80-692d-43be-aa56-6d6f21e3a33c",
+            "EnableRtrim" : true,
+            "Mapping" : {
+              "MapType" : "Element",
+              "TargetMetadataId" : "aa3b3e82-8530-4ba9-8a77-fdcbd372f2fe",
+              "TargetObjId" : "fa8f237c-92bf-4c72-9869-972cb22caeff",
+              "TargetObjectId" : "e2cba429-c95c-4867-a0a1-d511600a6f9a",
+              "TargetElementId" : "fa8f237c-92bf-4c72-9869-972cb22caeff"
+            }
+          }, {
+            "ID" : "1469ef1a-a157-41a2-aed2-7e438d19edf5",
+            "LabelID" : "Merchant_MerchantCode",
+            "ChildAssociations" : [ ],
+            "Code" : "MerchantCode",
+            "Name" : "商户编号",
+            "MDataType" : "String",
+            "Length" : 36,
+            "IsRefElement" : true,
+            "RefElementID" : "022f5d98-a6b6-4fa5-8481-c6ef009995b7",
+            "EnableRtrim" : true,
+            "Mapping" : {
+              "MapType" : "Element",
+              "TargetMetadataId" : "aa3b3e82-8530-4ba9-8a77-fdcbd372f2fe",
+              "TargetObjId" : "e5e66144-74d1-4f6b-bacd-d2d5eb21b645",
+              "TargetObjectId" : "e2cba429-c95c-4867-a0a1-d511600a6f9a",
+              "TargetElementId" : "e5e66144-74d1-4f6b-bacd-d2d5eb21b645"
+            }
+          } ],
+          "RefModelID" : "90e313f0-df66-4c49-8b28-b0e9a0964ab1",
+          "RefModelName" : "商户",
+          "RefModelCode" : "Merchant",
+          "RefModelPkgName" : "Inspur.GS.AppOrder.DF.Merchant.Merchant.Back",
+          "RefObjectID" : "28aec447-bd40-405f-819d-0381b1b83856",
+          "RefObjectCode" : "Merchant",
+          "RefObjectName" : "商户",
+          "KeyCollection" : [ {
+            "SourceElement" : "a3ea4e00-3163-44e8-bb40-cf835ff91b2a",
+            "SourceElementDisplay" : "主键",
+            "TargetElement" : "f2cea256-5859-4e32-8f46-ff580505f2ff",
+            "TargetElementDisplay" : "商户",
+            "RefDataModelName" : ""
+          } ],
+          "AssoModelInfo" : {
+            "ModelConfigId" : "Inspur.GS.AppOrder.DF.Merchant.Merchant.Back.Merchant",
+            "MainObjCode" : "Merchant"
+          }
+        } ],
+        "Code" : "Merchant",
+        "Name" : "商户",
+        "ObjectType" : "Association",
+        "MDataType" : "String",
+        "Length" : 36,
+        "EnableRtrim" : true,
+        "Mapping" : {
+          "MapType" : "Element",
+          "TargetMetadataId" : "aa3b3e82-8530-4ba9-8a77-fdcbd372f2fe",
+          "TargetObjId" : "024019ed-bc82-4fd3-9d24-0f3df662e1cb",
+          "TargetObjectId" : "e2cba429-c95c-4867-a0a1-d511600a6f9a",
+          "TargetElementId" : "024019ed-bc82-4fd3-9d24-0f3df662e1cb"
+        }
+      }, {
+        "ID" : "b3e111b3-b6ea-488f-a6a4-d162127cab3f",
+        "LabelID" : "OrderTime",
+        "ChildAssociations" : [ ],
+        "Code" : "OrderTime",
+        "Name" : "下单时间",
+        "MDataType" : "String",
+        "Length" : 30,
+        "EnableRtrim" : true,
+        "Mapping" : {
+          "MapType" : "Element",
+          "TargetMetadataId" : "aa3b3e82-8530-4ba9-8a77-fdcbd372f2fe",
+          "TargetObjId" : "27b26987-1a46-4d7c-8e8c-42d14207edac",
+          "TargetObjectId" : "e2cba429-c95c-4867-a0a1-d511600a6f9a",
+          "TargetElementId" : "27b26987-1a46-4d7c-8e8c-42d14207edac"
+        }
+      }, {
+        "ID" : "a000bf9a-ca26-4e69-b567-60ecfe967746",
+        "LabelID" : "PayMethod",
+        "ChildAssociations" : [ ],
+        "Code" : "PayMethod",
+        "Name" : "支付方式",
+        "ObjectType" : "Enum",
+        "MDataType" : "String",
+        "Length" : 20,
+        "EnableRtrim" : true,
+        "EnumIndexType" : 1,
+        "ContainEnumValues" : [ {
+          "Name" : "现金",
+          "Index" : 0,
+          "StringIndex" : "Cash",
+          "I18nResourceInfoPrefix" : "Inspur.GS.AppOrder.Order.SaleOrder.SaleOrder.Front.Vo.SaleOrderCard_frm.SaleOrder.PayMethod.Cash",
+          "IsDefaultEnum" : true,
+          "Value" : "Cash"
+        }, {
+          "Name" : "银联",
+          "Index" : 1,
+          "StringIndex" : "Upay",
+          "I18nResourceInfoPrefix" : "Inspur.GS.AppOrder.Order.SaleOrder.SaleOrder.Front.Vo.SaleOrderCard_frm.SaleOrder.PayMethod.Upay",
+          "IsDefaultEnum" : false,
+          "Value" : "Upay"
+        }, {
+          "Name" : "微信",
+          "Index" : 2,
+          "StringIndex" : "WeChat",
+          "I18nResourceInfoPrefix" : "Inspur.GS.AppOrder.Order.SaleOrder.SaleOrder.Front.Vo.SaleOrderCard_frm.SaleOrder.PayMethod.WeChat",
+          "IsDefaultEnum" : false,
+          "Value" : "WeChat"
+        }, {
+          "Name" : "支付宝",
+          "Index" : 3,
+          "StringIndex" : "AliPay",
+          "I18nResourceInfoPrefix" : "Inspur.GS.AppOrder.Order.SaleOrder.SaleOrder.Front.Vo.SaleOrderCard_frm.SaleOrder.PayMethod.AliPay",
+          "IsDefaultEnum" : false,
+          "Value" : "AliPay"
+        } ],
+        "Mapping" : {
+          "MapType" : "Element",
+          "TargetMetadataId" : "aa3b3e82-8530-4ba9-8a77-fdcbd372f2fe",
+          "TargetObjId" : "ca4eae5f-e717-4788-9eb7-d5acdd7b014b",
+          "TargetObjectId" : "e2cba429-c95c-4867-a0a1-d511600a6f9a",
+          "TargetElementId" : "ca4eae5f-e717-4788-9eb7-d5acdd7b014b"
+        }
+      }, {
+        "ID" : "d14b583d-8771-418f-a1f3-764a9dd54752",
+        "LabelID" : "OrderType",
+        "ChildAssociations" : [ ],
+        "Code" : "OrderType",
+        "Name" : "订单类型",
+        "ObjectType" : "Enum",
+        "MDataType" : "String",
+        "Length" : 20,
+        "EnableRtrim" : true,
+        "EnumIndexType" : 1,
+        "ContainEnumValues" : [ {
+          "Name" : "备货订单",
+          "Index" : 0,
+          "StringIndex" : "bh",
+          "I18nResourceInfoPrefix" : "Inspur.GS.AppOrder.Order.SaleOrder.SaleOrder.Front.Vo.SaleOrderCard_frm.SaleOrder.OrderType.bh",
+          "IsDefaultEnum" : true,
+          "Value" : "bh"
+        }, {
+          "Name" : "发货订单",
+          "Index" : 1,
+          "StringIndex" : "fh",
+          "I18nResourceInfoPrefix" : "Inspur.GS.AppOrder.Order.SaleOrder.SaleOrder.Front.Vo.SaleOrderCard_frm.SaleOrder.OrderType.fh",
+          "IsDefaultEnum" : false,
+          "Value" : "fh"
+        } ],
+        "Mapping" : {
+          "MapType" : "Element",
+          "TargetMetadataId" : "aa3b3e82-8530-4ba9-8a77-fdcbd372f2fe",
+          "TargetObjId" : "cbc58713-4981-4fa3-8a39-c284e5d25302",
+          "TargetObjectId" : "e2cba429-c95c-4867-a0a1-d511600a6f9a",
+          "TargetElementId" : "cbc58713-4981-4fa3-8a39-c284e5d25302"
+        }
+      }, {
+        "ID" : "69eb1c8c-a20f-4abc-8418-ab2d6e6b1ee6",
+        "LabelID" : "OrderPerson",
+        "ChildAssociations" : [ {
+          "ID" : "c37ffcc8-018f-4fe5-9ff6-ea9d5d5b2378",
+          "RefElementCollection" : [ {
+            "ID" : "db7ea81d-b27c-409c-9c1d-e1078cb22c07",
+            "LabelID" : "OrderPerson_Name",
+            "ChildAssociations" : [ ],
+            "Code" : "Name",
+            "Name" : "名称",
+            "MDataType" : "String",
+            "Length" : 1000,
+            "IsRefElement" : true,
+            "RefElementID" : "9a66ba74-9003-4f5a-be5e-851bf28031ef",
+            "EnableRtrim" : true,
+            "Mapping" : {
+              "MapType" : "Element",
+              "TargetMetadataId" : "aa3b3e82-8530-4ba9-8a77-fdcbd372f2fe",
+              "TargetObjId" : "dca4500a-69ef-4129-a760-405784e45099",
+              "TargetObjectId" : "e2cba429-c95c-4867-a0a1-d511600a6f9a",
+              "TargetElementId" : "dca4500a-69ef-4129-a760-405784e45099"
+            }
+          }, {
+            "ID" : "8d28e829-e8db-4d42-b3cd-0942a8b67f17",
+            "LabelID" : "OrderPerson_Code",
+            "ChildAssociations" : [ ],
+            "Code" : "Code",
+            "Name" : "编号",
+            "MDataType" : "String",
+            "Length" : 1000,
+            "IsRefElement" : true,
+            "RefElementID" : "4b9a0bff-2f9e-4656-b7bf-6e98468109cc",
+            "EnableRtrim" : true,
+            "Mapping" : {
+              "MapType" : "Element",
+              "TargetMetadataId" : "aa3b3e82-8530-4ba9-8a77-fdcbd372f2fe",
+              "TargetObjId" : "add0c8cb-143c-469f-87c0-fdd6d7040c4e",
+              "TargetObjectId" : "e2cba429-c95c-4867-a0a1-d511600a6f9a",
+              "TargetElementId" : "add0c8cb-143c-469f-87c0-fdd6d7040c4e"
+            }
+          } ],
+          "RefModelID" : "c59fb9ad-aad0-4ead-949f-3ec72d9c182c",
+          "RefModelName" : "行政人员",
+          "RefModelCode" : "Employee",
+          "RefModelPkgName" : "Inspur.GS.AppOrder.DF.Employee.Employee.Back",
+          "RefObjectID" : "a733b7c7-6046-4d15-b93e-f23bf0f9aad8",
+          "RefObjectCode" : "Employee",
+          "RefObjectName" : "行政人员",
+          "KeyCollection" : [ {
+            "SourceElement" : "c853a3fd-031e-414b-8afd-72abdec31f7d",
+            "SourceElementDisplay" : "主键",
+            "TargetElement" : "5c7ccb0f-47ae-4eed-ac9c-6accacd384eb",
+            "TargetElementDisplay" : "下单人",
+            "RefDataModelName" : ""
+          } ],
+          "AssoModelInfo" : {
+            "ModelConfigId" : "Inspur.GS.AppOrder.DF.Employee.Employee.Back.Employee",
+            "MainObjCode" : "Employee"
+          }
+        } ],
+        "Code" : "OrderPerson",
+        "Name" : "下单人",
+        "ObjectType" : "Association",
+        "MDataType" : "String",
+        "Length" : 36,
+        "EnableRtrim" : true,
+        "Mapping" : {
+          "MapType" : "Element",
+          "TargetMetadataId" : "aa3b3e82-8530-4ba9-8a77-fdcbd372f2fe",
+          "TargetObjId" : "97fb6e6f-0ed9-4d45-9e07-b538c7460088",
+          "TargetObjectId" : "e2cba429-c95c-4867-a0a1-d511600a6f9a",
+          "TargetElementId" : "97fb6e6f-0ed9-4d45-9e07-b538c7460088"
+        }
+      }, {
+        "ID" : "2f511548-81ea-4838-9f52-db752d978689",
+        "LabelID" : "Telephone",
+        "ChildAssociations" : [ ],
+        "Code" : "Telephone",
+        "Name" : "联系电话",
+        "MDataType" : "String",
+        "Length" : 20,
+        "EnableRtrim" : true,
+        "Mapping" : {
+          "MapType" : "Element",
+          "TargetMetadataId" : "aa3b3e82-8530-4ba9-8a77-fdcbd372f2fe",
+          "TargetObjId" : "b60ffcea-baa6-45ba-9ea7-091a62b52360",
+          "TargetObjectId" : "e2cba429-c95c-4867-a0a1-d511600a6f9a",
+          "TargetElementId" : "b60ffcea-baa6-45ba-9ea7-091a62b52360"
+        }
+      }, {
+        "ID" : "46c317ac-0f5e-4699-a628-ce394d90449f",
+        "LabelID" : "OrderState",
+        "ChildAssociations" : [ ],
+        "Code" : "OrderState",
+        "Name" : "订单状态",
+        "ObjectType" : "Enum",
+        "MDataType" : "String",
+        "Length" : 20,
+        "EnableRtrim" : true,
+        "EnumIndexType" : 1,
+        "ContainEnumValues" : [ {
+          "Name" : "未开始",
+          "Index" : 0,
+          "StringIndex" : "None",
+          "I18nResourceInfoPrefix" : "Inspur.GS.AppOrder.Order.SaleOrder.SaleOrder.Front.Vo.SaleOrderCard_frm.SaleOrder.OrderState.None",
+          "IsDefaultEnum" : true,
+          "Value" : "None"
+        }, {
+          "Name" : "进行中",
+          "Index" : 1,
+          "StringIndex" : "Ongoing",
+          "I18nResourceInfoPrefix" : "Inspur.GS.AppOrder.Order.SaleOrder.SaleOrder.Front.Vo.SaleOrderCard_frm.SaleOrder.OrderState.Ongoing",
+          "IsDefaultEnum" : false,
+          "Value" : "Ongoing"
+        }, {
+          "Name" : "已完成",
+          "Index" : 2,
+          "StringIndex" : "Done",
+          "I18nResourceInfoPrefix" : "Inspur.GS.AppOrder.Order.SaleOrder.SaleOrder.Front.Vo.SaleOrderCard_frm.SaleOrder.OrderState.Done",
+          "IsDefaultEnum" : false,
+          "Value" : "Done"
+        }, {
+          "Name" : "异常",
+          "Index" : 3,
+          "StringIndex" : "Error",
+          "I18nResourceInfoPrefix" : "Inspur.GS.AppOrder.Order.SaleOrder.SaleOrder.Front.Vo.SaleOrderCard_frm.SaleOrder.OrderState.Error",
+          "IsDefaultEnum" : false,
+          "Value" : "Error"
+        } ],
+        "Mapping" : {
+          "MapType" : "Element",
+          "TargetMetadataId" : "aa3b3e82-8530-4ba9-8a77-fdcbd372f2fe",
+          "TargetObjId" : "bb5bc9e7-d524-4b3f-80ea-5cbcb7ad8ada",
+          "TargetObjectId" : "e2cba429-c95c-4867-a0a1-d511600a6f9a",
+          "TargetElementId" : "bb5bc9e7-d524-4b3f-80ea-5cbcb7ad8ada"
+        }
+      }, {
+        "ID" : "499e8db2-42ab-44ba-bbf7-1fae44bf0080",
+        "LabelID" : "Remark",
+        "ChildAssociations" : [ ],
+        "Code" : "Remark",
+        "Name" : "备注",
+        "MDataType" : "String",
+        "Length" : 100,
+        "EnableRtrim" : true,
+        "Mapping" : {
+          "MapType" : "Element",
+          "TargetMetadataId" : "aa3b3e82-8530-4ba9-8a77-fdcbd372f2fe",
+          "TargetObjId" : "73ed5b80-5c8f-407e-804e-d6d8e0f7033d",
+          "TargetObjectId" : "e2cba429-c95c-4867-a0a1-d511600a6f9a",
+          "TargetElementId" : "73ed5b80-5c8f-407e-804e-d6d8e0f7033d"
+        }
+      }, {
+        "ID" : "b8332a1a-6e7e-4ea1-8a38-e90a8c3c97d2",
+        "LabelID" : "TotalPrice",
+        "ChildAssociations" : [ ],
+        "Code" : "TotalPrice",
+        "Name" : "订单金额",
+        "MDataType" : "Decimal",
+        "Length" : 10,
+        "Precision" : 2,
+        "EnableRtrim" : true,
+        "Mapping" : {
+          "MapType" : "Element",
+          "TargetMetadataId" : "aa3b3e82-8530-4ba9-8a77-fdcbd372f2fe",
+          "TargetObjId" : "863d068c-e917-4b64-aab6-c40f9bd3af63",
+          "TargetObjectId" : "e2cba429-c95c-4867-a0a1-d511600a6f9a",
+          "TargetElementId" : "863d068c-e917-4b64-aab6-c40f9bd3af63"
+        }
+      } ],
+      "ContainChildObjects" : [ {
+        "ID" : "dbdc1cbd-3746-40c9-a6d8-0fed5bb0f51c",
+        "Code" : "OrderItems",
+        "Name" : "订单明细",
+        "I18nResourceInfoPrefix" : "Inspur.GS.AppOrder.Order.SaleOrder.SaleOrder.Front.Vo.SaleOrderCard_frm.OrderItems",
+        "ContainElements" : [ {
+          "ID" : "1be84b26-98a4-4502-b40c-e4cf79c33343",
+          "LabelID" : "ID",
+          "ChildAssociations" : [ ],
+          "Code" : "ID",
+          "Name" : "主键",
+          "MDataType" : "String",
+          "Length" : 36,
+          "IsRequire" : true,
+          "EnableRtrim" : true,
+          "Mapping" : {
+            "MapType" : "Element",
+            "TargetMetadataId" : "aa3b3e82-8530-4ba9-8a77-fdcbd372f2fe",
+            "TargetObjId" : "1805ecb4-2feb-4b24-a51c-3a145a53b5fe",
+            "TargetObjectId" : "d0099f0b-a2e8-44d9-8b47-262cfc5c9cda",
+            "TargetElementId" : "1805ecb4-2feb-4b24-a51c-3a145a53b5fe"
+          }
+        }, {
+          "ID" : "db198c4e-0058-4a1c-95a4-35a73bac3bac",
+          "LabelID" : "ParentID",
+          "ChildAssociations" : [ ],
+          "Code" : "ParentID",
+          "Name" : "上级对象主键",
+          "MDataType" : "String",
+          "Length" : 36,
+          "IsRequire" : true,
+          "EnableRtrim" : true,
+          "Mapping" : {
+            "MapType" : "Element",
+            "TargetMetadataId" : "aa3b3e82-8530-4ba9-8a77-fdcbd372f2fe",
+            "TargetObjId" : "54e9369b-1f67-477f-a2aa-8209d33ff134",
+            "TargetObjectId" : "d0099f0b-a2e8-44d9-8b47-262cfc5c9cda",
+            "TargetElementId" : "54e9369b-1f67-477f-a2aa-8209d33ff134"
+          }
+        }, {
+          "ID" : "3a4307e9-bfe2-40a2-b8f9-1b030e6912f3",
+          "LabelID" : "Goods",
+          "ChildAssociations" : [ {
+            "ID" : "e04ee1c6-e3db-4eb2-b9a8-19b510bcf284",
+            "RefElementCollection" : [ {
+              "ID" : "f04dc624-bac4-4609-95dc-0b0707017d67",
+              "LabelID" : "Goods_GoodsName",
+              "ChildAssociations" : [ ],
+              "Code" : "GoodsName",
+              "Name" : "商品名称",
+              "MDataType" : "String",
+              "Length" : 36,
+              "IsRefElement" : true,
+              "RefElementID" : "7de76016-70c7-48b1-873b-ab6ecb67a3dc",
+              "EnableRtrim" : true,
+              "Mapping" : {
+                "MapType" : "Element",
+                "TargetMetadataId" : "aa3b3e82-8530-4ba9-8a77-fdcbd372f2fe",
+                "TargetObjId" : "14781c2e-3893-4abc-8ed7-52554377183d",
+                "TargetObjectId" : "d0099f0b-a2e8-44d9-8b47-262cfc5c9cda",
+                "TargetElementId" : "14781c2e-3893-4abc-8ed7-52554377183d"
+              }
+            }, {
+              "ID" : "022a53f4-fb29-42f7-9a1a-2218c8ec94f8",
+              "LabelID" : "Goods_GoodsCode",
+              "ChildAssociations" : [ ],
+              "Code" : "GoodsCode",
+              "Name" : "商品编号",
+              "MDataType" : "String",
+              "Length" : 36,
+              "IsRefElement" : true,
+              "RefElementID" : "84721949-f4ca-4656-8d3a-b6efa1a7be61",
+              "EnableRtrim" : true,
+              "Mapping" : {
+                "MapType" : "Element",
+                "TargetMetadataId" : "aa3b3e82-8530-4ba9-8a77-fdcbd372f2fe",
+                "TargetObjId" : "06a7f0ec-8e65-4bc6-9a87-9d561c7eb19e",
+                "TargetObjectId" : "d0099f0b-a2e8-44d9-8b47-262cfc5c9cda",
+                "TargetElementId" : "06a7f0ec-8e65-4bc6-9a87-9d561c7eb19e"
+              }
+            } ],
+            "RefModelID" : "093737eb-c70e-48ff-9c7f-c8b1d9be8628",
+            "RefModelName" : "商品",
+            "RefModelCode" : "Goods",
+            "RefModelPkgName" : "Inspur.GS.AppOrder.DF.Goods.Goods.Back",
+            "RefObjectID" : "16b36a8c-9eaf-423d-b6a4-3e986b8dad93",
+            "RefObjectCode" : "Goods",
+            "RefObjectName" : "商品",
+            "KeyCollection" : [ {
+              "SourceElement" : "5f6f262e-e0b3-4540-82e9-f8753d1a9e15",
+              "SourceElementDisplay" : "主键",
+              "TargetElement" : "3a4307e9-bfe2-40a2-b8f9-1b030e6912f3",
+              "TargetElementDisplay" : "商品",
+              "RefDataModelName" : ""
+            } ],
+            "AssoModelInfo" : {
+              "ModelConfigId" : "Inspur.GS.AppOrder.DF.Goods.Goods.Back.Goods",
+              "MainObjCode" : "Goods"
+            }
+          } ],
+          "Code" : "Goods",
+          "Name" : "商品",
+          "ObjectType" : "Association",
+          "MDataType" : "String",
+          "Length" : 36,
+          "EnableRtrim" : true,
+          "Mapping" : {
+            "MapType" : "Element",
+            "TargetMetadataId" : "aa3b3e82-8530-4ba9-8a77-fdcbd372f2fe",
+            "TargetObjId" : "ec6cd550-97c9-4840-ab01-c665868dfe55",
+            "TargetObjectId" : "d0099f0b-a2e8-44d9-8b47-262cfc5c9cda",
+            "TargetElementId" : "ec6cd550-97c9-4840-ab01-c665868dfe55"
+          }
+        }, {
+          "ID" : "31b92e40-426b-4f5f-9fcd-43036e1efcf5",
+          "LabelID" : "Specification",
+          "ChildAssociations" : [ ],
+          "Code" : "Specification",
+          "Name" : "规格型号",
+          "MDataType" : "String",
+          "Length" : 36,
+          "EnableRtrim" : true,
+          "Mapping" : {
+            "MapType" : "Element",
+            "TargetMetadataId" : "aa3b3e82-8530-4ba9-8a77-fdcbd372f2fe",
+            "TargetObjId" : "9195c810-8d2c-49fb-b8f8-d82ed33dbc77",
+            "TargetObjectId" : "d0099f0b-a2e8-44d9-8b47-262cfc5c9cda",
+            "TargetElementId" : "9195c810-8d2c-49fb-b8f8-d82ed33dbc77"
+          }
+        }, {
+          "ID" : "d1e85f51-bd34-471b-9216-9b8dd83823a9",
+          "LabelID" : "Quality",
+          "ChildAssociations" : [ ],
+          "Code" : "Quality",
+          "Name" : "数量",
+          "MDataType" : "Integer",
+          "EnableRtrim" : true,
+          "Mapping" : {
+            "MapType" : "Element",
+            "TargetMetadataId" : "aa3b3e82-8530-4ba9-8a77-fdcbd372f2fe",
+            "TargetObjId" : "a083fc20-16d2-476e-bb33-cf596b970815",
+            "TargetObjectId" : "d0099f0b-a2e8-44d9-8b47-262cfc5c9cda",
+            "TargetElementId" : "a083fc20-16d2-476e-bb33-cf596b970815"
+          }
+        }, {
+          "ID" : "b57c8582-20cf-4ed9-9592-91643061fea1",
+          "LabelID" : "Price",
+          "ChildAssociations" : [ ],
+          "Code" : "Price",
+          "Name" : "标准单价",
+          "MDataType" : "Decimal",
+          "Length" : 10,
+          "Precision" : 2,
+          "EnableRtrim" : true,
+          "Mapping" : {
+            "MapType" : "Element",
+            "TargetMetadataId" : "aa3b3e82-8530-4ba9-8a77-fdcbd372f2fe",
+            "TargetObjId" : "e3a142cd-a63c-4140-a062-b4da5c7f3848",
+            "TargetObjectId" : "d0099f0b-a2e8-44d9-8b47-262cfc5c9cda",
+            "TargetElementId" : "e3a142cd-a63c-4140-a062-b4da5c7f3848"
+          }
+        }, {
+          "ID" : "64a437b5-e46a-433f-a592-b3992fe3d12f",
+          "LabelID" : "ActualPrice",
+          "ChildAssociations" : [ ],
+          "Code" : "ActualPrice",
+          "Name" : "实际单价",
+          "MDataType" : "Decimal",
+          "Length" : 10,
+          "Precision" : 2,
+          "EnableRtrim" : true,
+          "Mapping" : {
+            "MapType" : "Element",
+            "TargetMetadataId" : "aa3b3e82-8530-4ba9-8a77-fdcbd372f2fe",
+            "TargetObjId" : "b3553f6e-3229-4023-b00e-3e35da3b9e4e",
+            "TargetObjectId" : "d0099f0b-a2e8-44d9-8b47-262cfc5c9cda",
+            "TargetElementId" : "b3553f6e-3229-4023-b00e-3e35da3b9e4e"
+          }
+        }, {
+          "ID" : "c9b47bda-1c6c-4841-95cb-4436ae35a14f",
+          "LabelID" : "DiscountType",
+          "ChildAssociations" : [ ],
+          "Code" : "DiscountType",
+          "Name" : "折扣类型",
+          "ObjectType" : "Enum",
+          "MDataType" : "String",
+          "Length" : 20,
+          "EnableRtrim" : true,
+          "EnumIndexType" : 1,
+          "ContainEnumValues" : [ {
+            "Name" : "无折扣",
+            "Index" : 0,
+            "StringIndex" : "none",
+            "I18nResourceInfoPrefix" : "Inspur.GS.AppOrder.Order.SaleOrder.SaleOrder.Front.Vo.SaleOrderCard_frm.OrderItems.DiscountType.none",
+            "IsDefaultEnum" : true,
+            "Value" : "none"
+          }, {
+            "Name" : "折扣",
+            "Index" : 1,
+            "StringIndex" : "zk",
+            "I18nResourceInfoPrefix" : "Inspur.GS.AppOrder.Order.SaleOrder.SaleOrder.Front.Vo.SaleOrderCard_frm.OrderItems.DiscountType.zk",
+            "IsDefaultEnum" : false,
+            "Value" : "zk"
+          } ],
+          "Mapping" : {
+            "MapType" : "Element",
+            "TargetMetadataId" : "aa3b3e82-8530-4ba9-8a77-fdcbd372f2fe",
+            "TargetObjId" : "84b8e6dd-8fa0-44f8-bde9-a5d0c2cb901f",
+            "TargetObjectId" : "d0099f0b-a2e8-44d9-8b47-262cfc5c9cda",
+            "TargetElementId" : "84b8e6dd-8fa0-44f8-bde9-a5d0c2cb901f"
+          }
+        }, {
+          "ID" : "451b4df4-d6b6-44c8-a779-661761841b17",
+          "LabelID" : "Discount",
+          "ChildAssociations" : [ ],
+          "Code" : "Discount",
+          "Name" : "折扣",
+          "MDataType" : "String",
+          "Length" : 10,
+          "EnableRtrim" : true,
+          "Mapping" : {
+            "MapType" : "Element",
+            "TargetMetadataId" : "aa3b3e82-8530-4ba9-8a77-fdcbd372f2fe",
+            "TargetObjId" : "341d24be-e0d7-46a1-8ef6-e1b8e8977ea9",
+            "TargetObjectId" : "d0099f0b-a2e8-44d9-8b47-262cfc5c9cda",
+            "TargetElementId" : "341d24be-e0d7-46a1-8ef6-e1b8e8977ea9"
+          }
+        }, {
+          "ID" : "2fbc4129-51f8-4cd6-b719-9727ad167f7b",
+          "LabelID" : "Amount",
+          "ChildAssociations" : [ ],
+          "Code" : "Amount",
+          "Name" : "结算金额",
+          "MDataType" : "Decimal",
+          "Length" : 10,
+          "Precision" : 2,
+          "EnableRtrim" : true,
+          "Mapping" : {
+            "MapType" : "Element",
+            "TargetMetadataId" : "aa3b3e82-8530-4ba9-8a77-fdcbd372f2fe",
+            "TargetObjId" : "3b2aee14-e1a4-4e14-9abd-0350cb3a5527",
+            "TargetObjectId" : "d0099f0b-a2e8-44d9-8b47-262cfc5c9cda",
+            "TargetElementId" : "3b2aee14-e1a4-4e14-9abd-0350cb3a5527"
+          }
+        }, {
+          "ID" : "186e624e-326c-4e4f-8f2c-5baf7fe152cc",
+          "LabelID" : "Remark",
+          "ChildAssociations" : [ ],
+          "Code" : "Remark",
+          "Name" : "备注",
+          "MDataType" : "String",
+          "Length" : 100,
+          "EnableRtrim" : true,
+          "Mapping" : {
+            "MapType" : "Element",
+            "TargetMetadataId" : "aa3b3e82-8530-4ba9-8a77-fdcbd372f2fe",
+            "TargetObjId" : "93c1834c-a08a-4f78-bb64-ae71e9e60b8e",
+            "TargetObjectId" : "d0099f0b-a2e8-44d9-8b47-262cfc5c9cda",
+            "TargetElementId" : "93c1834c-a08a-4f78-bb64-ae71e9e60b8e"
+          }
+        } ],
+        "RefObjectName" : "53bd190b-712c-4265-9774-c6aff8421afd",
+        "ObjectType" : 1,
+        "ColumnGenerateID" : {
+          "ElementID" : "1be84b26-98a4-4502-b40c-e4cf79c33343",
+          "GenerateType" : "Guid",
+          "ColumnParameters" : [ ]
+        },
+        "BelongModelID" : "ad12fca3-caa8-427d-a1ee-f1ce13d7b9ee",
+        "Keys" : [ {
+          "SourceElement" : "db198c4e-0058-4a1c-95a4-35a73bac3bac",
+          "SourceElementDisplay" : "上级对象主键",
+          "TargetElement" : "9fdf7d62-a967-41fd-bcb7-881894ccd23b",
+          "TargetElementDisplay" : "主键",
+          "RefDataModelName" : ""
+        } ],
+        "ParentObjectID" : "533d0acd-fc75-40c2-9ed7-b01243a15b2d",
+        "Mapping" : {
+          "MapType" : "BEObject",
+          "TargetMetadataId" : "aa3b3e82-8530-4ba9-8a77-fdcbd372f2fe",
+          "TargetObjId" : "d0099f0b-a2e8-44d9-8b47-262cfc5c9cda"
+        }
+      } ],
+      "RefObjectName" : "eb654c50-8e79-4ba0-8bb3-e08ca2b5d57e",
+      "ColumnGenerateID" : {
+        "ElementID" : "9fdf7d62-a967-41fd-bcb7-881894ccd23b",
+        "GenerateType" : "Guid",
+        "ColumnParameters" : [ ]
+      },
+      "BelongModelID" : "ad12fca3-caa8-427d-a1ee-f1ce13d7b9ee",
+      "Mapping" : {
+        "MapType" : "BEObject",
+        "TargetMetadataId" : "aa3b3e82-8530-4ba9-8a77-fdcbd372f2fe",
+        "TargetObjId" : "e2cba429-c95c-4867-a0a1-d511600a6f9a"
+      }
+    },
+    "Variables" : {
+      "ID" : "6f7e42c3-af68-4222-9c67-be2e548c6fb3",
+      "Code" : "SaleOrderCard_frmVariable",
+      "Name" : "订单维护_frm变量",
+      "I18nResourceInfoPrefix" : ""
+    },
+    "ConvertMsg" : false,
+    "Mapping" : {
+      "MapType" : "BizEntity",
+      "TargetMetadataId" : "aa3b3e82-8530-4ba9-8a77-fdcbd372f2fe",
+      "TargetObjId" : "aa3b3e82-8530-4ba9-8a77-fdcbd372f2fe"
+    },
+    "ValueHelpConfigs" : [ {
+      "ElementID" : "SaleOrder/orderPerson_OrderPerson_Name",
+      "HelperID" : "7a9fbe3b-c1ac-4650-b5cd-29c5bfb6c78e",
+      "FilterExpression" : null,
+      "CustomizationInfo" : null,
+      "EnableCustomHelpAuth" : false,
+      "HelpExtend" : {
+        "BeforeHelp" : [ ]
+      }
+    }, {
+      "ElementID" : "SaleOrder/merchant_Merchant_MerchantName",
+      "HelperID" : "fd41004a-fa48-4cfc-a9cb-b642a7336e8f",
+      "FilterExpression" : null,
+      "CustomizationInfo" : null,
+      "EnableCustomHelpAuth" : false,
+      "HelpExtend" : {
+        "BeforeHelp" : [ ]
+      }
+    }, {
+      "ElementID" : "OrderItems/goods_Goods_GoodsName",
+      "HelperID" : "f8681d7b-6966-4a27-b72c-961735af8484",
+      "FilterExpression" : null,
+      "CustomizationInfo" : null,
+      "EnableCustomHelpAuth" : false,
+      "HelpExtend" : {
+        "BeforeHelp" : [ ]
+      }
+    } ],
+    "ExtendProperties" : { }
+  },
+  "ExtendRule" : null,
+  "RelativePath" : "AppOrder/Order/SaleOrder/bo-saleorder-front/metadata/components",
+  "ExtendProperty" : "",
+  "Extended" : false,
+  "PreviousVersion" : null,
+  "Version" : null,
+  "Properties" : null
+}

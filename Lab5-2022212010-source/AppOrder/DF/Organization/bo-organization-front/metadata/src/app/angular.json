@@ -1,0 +1,183 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {
+    "bo-organization-front": {
+      "root": "projects/bo-organization-front/",
+      "sourceRoot": "projects/bo-organization-front/src",
+      "projectType": "application",
+      "prefix": "app",
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        }
+      },
+      "targets": {
+        "build": {
+          "builder": "@farris/farris-rollup:build",
+          "options": {
+            "format": "system",
+            "outputPath": "dist-rollup/bo-organization-front",
+            "ngcOut": "out-tsc/app/projects/bo-organization-front",
+            "excludeNgFactory": true,
+            "index": "projects/bo-organization-front/src/index.rollup.html",
+            "importmap": "/platform/runtime/common/web/runtime.common.manifest.json?v=1731165303847",
+            "tsConfig": "projects/bo-organization-front/tsconfig.app.json",
+            "entry": {
+              "main": {
+                "entry": "src/main.js",
+                "sourceMaps": false
+              },
+              "stucard": {
+                "entry": "src/app/stucard/stucard.module.ngfactory.js",
+                "sourceMaps": false,
+                "output": "stucard"
+              },
+              "teacard": {
+                "entry": "src/app/teacard/teacard.module.ngfactory.js",
+                "sourceMaps": false,
+                "output": "teacard"
+              },
+              "coursecard": {
+                "entry": "src/app/coursecard/coursecard.module.ngfactory.js",
+                "sourceMaps": false,
+                "output": "coursecard"
+              },
+              "studentcoursecard": {
+                "entry": "src/app/studentcoursecard/studentcoursecard.module.ngfactory.js",
+                "sourceMaps": false,
+                "output": "studentcoursecard"
+              },
+              "student": {
+                "entry": "src/app/student/student.module.ngfactory.js",
+                "sourceMaps": false,
+                "output": "student"
+              },
+              "teacher": {
+                "entry": "src/app/teacher/teacher.module.ngfactory.js",
+                "sourceMaps": false,
+                "output": "teacher"
+              },
+              "course": {
+                "entry": "src/app/course/course.module.ngfactory.js",
+                "sourceMaps": false,
+                "output": "course"
+              },
+              "studentcourse": {
+                "entry": "src/app/studentcourse/studentcourse.module.ngfactory.js",
+                "sourceMaps": false,
+                "output": "studentcourse"
+              }
+            },
+            "uglify": false,
+            "hash": false,
+            "libs": {},
+            "serve": false,
+            "visualize": false,
+            "libsPath": "D:/inbuilder_community_2406_x86_64_build20240630/inbuilder_community_2406_x86_64_build20240630/demo/workspace_demo/node_modules/@farris/farris-rollup/src/build/libsWithNgFactory.json",
+            "linkedNodeModules": "D:/inbuilder_community_2406_x86_64_build20240630/inbuilder_community_2406_x86_64_build20240630/demo/workspace_demo/node_modules",
+            "assets": [],
+            "i18n": {
+              "projects/bo-organization-front/src/app/stucard/i18n": "dist-rollup/bo-organization-front/stucard/i18n",
+              "projects/bo-organization-front/src/app/stucard/expressions": "dist-rollup/bo-organization-front/stucard/expressions",
+              "projects/bo-organization-front/src/app/stucard/metadata": "dist-rollup/bo-organization-front/stucard",
+              "projects/bo-organization-front/src/app/stucard/services/dist-rollup": "dist-rollup/bo-organization-front/stucard/services",
+              "projects/bo-organization-front/src/app/teacard/i18n": "dist-rollup/bo-organization-front/teacard/i18n",
+              "projects/bo-organization-front/src/app/teacard/expressions": "dist-rollup/bo-organization-front/teacard/expressions",
+              "projects/bo-organization-front/src/app/teacard/metadata": "dist-rollup/bo-organization-front/teacard",
+              "projects/bo-organization-front/src/app/teacard/services/dist-rollup": "dist-rollup/bo-organization-front/teacard/services",
+              "projects/bo-organization-front/src/app/coursecard/i18n": "dist-rollup/bo-organization-front/coursecard/i18n",
+              "projects/bo-organization-front/src/app/coursecard/expressions": "dist-rollup/bo-organization-front/coursecard/expressions",
+              "projects/bo-organization-front/src/app/coursecard/metadata": "dist-rollup/bo-organization-front/coursecard",
+              "projects/bo-organization-front/src/app/coursecard/services/dist-rollup": "dist-rollup/bo-organization-front/coursecard/services",
+              "projects/bo-organization-front/src/app/studentcoursecard/i18n": "dist-rollup/bo-organization-front/studentcoursecard/i18n",
+              "projects/bo-organization-front/src/app/studentcoursecard/expressions": "dist-rollup/bo-organization-front/studentcoursecard/expressions",
+              "projects/bo-organization-front/src/app/studentcoursecard/metadata": "dist-rollup/bo-organization-front/studentcoursecard",
+              "projects/bo-organization-front/src/app/studentcoursecard/services/dist-rollup": "dist-rollup/bo-organization-front/studentcoursecard/services",
+              "projects/bo-organization-front/src/app/student/i18n": "dist-rollup/bo-organization-front/student/i18n",
+              "projects/bo-organization-front/src/app/student/expressions": "dist-rollup/bo-organization-front/student/expressions",
+              "projects/bo-organization-front/src/app/student/metadata": "dist-rollup/bo-organization-front/student",
+              "projects/bo-organization-front/src/app/student/services/dist-rollup": "dist-rollup/bo-organization-front/student/services",
+              "projects/bo-organization-front/src/app/teacher/i18n": "dist-rollup/bo-organization-front/teacher/i18n",
+              "projects/bo-organization-front/src/app/teacher/expressions": "dist-rollup/bo-organization-front/teacher/expressions",
+              "projects/bo-organization-front/src/app/teacher/metadata": "dist-rollup/bo-organization-front/teacher",
+              "projects/bo-organization-front/src/app/teacher/services/dist-rollup": "dist-rollup/bo-organization-front/teacher/services",
+              "projects/bo-organization-front/src/app/course/i18n": "dist-rollup/bo-organization-front/course/i18n",
+              "projects/bo-organization-front/src/app/course/expressions": "dist-rollup/bo-organization-front/course/expressions",
+              "projects/bo-organization-front/src/app/course/metadata": "dist-rollup/bo-organization-front/course",
+              "projects/bo-organization-front/src/app/course/services/dist-rollup": "dist-rollup/bo-organization-front/course/services",
+              "projects/bo-organization-front/src/app/studentcourse/i18n": "dist-rollup/bo-organization-front/studentcourse/i18n",
+              "projects/bo-organization-front/src/app/studentcourse/expressions": "dist-rollup/bo-organization-front/studentcourse/expressions",
+              "projects/bo-organization-front/src/app/studentcourse/metadata": "dist-rollup/bo-organization-front/studentcourse",
+              "projects/bo-organization-front/src/app/studentcourse/services/dist-rollup": "dist-rollup/bo-organization-front/studentcourse/services"
+            }
+          },
+          "configurations": {
+            "production": {
+              "importmap": "/platform/runtime/common/web/runtime.common.manifest.json?v=1731165303847",
+              "optimization": false,
+              "buildOptimizer": false,
+              "outputHashing": "none",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": true,
+              "showCircularDependencies": false,
+              "aot": true,
+              "extractLicenses": false,
+              "statsJson": false,
+              "progress": false,
+              "vendorChunk": true
+            },
+            "ci": {
+              "importmap": "/platform/runtime/common/web/runtime.common.manifest.json",
+              "libsPath": "请手工修改,参考示例：/builds/webadp/front-project-ci/node_modules/@farris/farris-rollup/src/build/libsWithNgFactory.json",
+              "linkedNodeModules": "请手工修改，参考示例：/builds/webadp/front-project-ci/node_modules",
+              "optimization": false,
+              "buildOptimizer": false,
+              "outputHashing": "none",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": true,
+              "showCircularDependencies": false,
+              "aot": true,
+              "extractLicenses": false,
+              "statsJson": false,
+              "progress": false,
+              "vendorChunk": true
+            }
+          }
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "browserTarget": "bo-organization-front:build"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "bo-organization-front:build:production"
+            },
+            "ci": {
+              "importmap": "/platform/runtime/common/web/runtime.common.manifest.json",
+              "libsPath": "请手工修改,参考示例：/builds/webadp/front-project-ci/node_modules/@farris/farris-rollup/src/build/libsWithNgFactory.json",
+              "linkedNodeModules": "请手工修改，参考示例：/builds/webadp/front-project-ci/node_modules",
+              "optimization": false,
+              "buildOptimizer": false,
+              "outputHashing": "none",
+              "sourceMap": false,
+              "extractCss": true,
+              "namedChunks": true,
+              "showCircularDependencies": false,
+              "aot": true,
+              "extractLicenses": false,
+              "statsJson": false,
+              "progress": false,
+              "vendorChunk": true
+            }
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "bo-organization-front"
+}

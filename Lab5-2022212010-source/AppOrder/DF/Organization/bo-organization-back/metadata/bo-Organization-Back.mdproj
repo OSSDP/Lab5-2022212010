@@ -1,0 +1,38 @@
+{
+  "NameSpace" : "Inspur.GS.AppOrder.DF.Organization.Organization.Back",
+  "Name" : "bo-Organization-Back",
+  "ProjectFileName" : "bo-Organization-Back.mdproj",
+  "ProjectPath" : "AppOrder/DF/Organization/bo-organization-back/metadata",
+  "MetadataPackageInfo" : {
+    "Name" : "Inspur.GS.AppOrder.DF.Organization.Organization.Back",
+    "Version" : {
+      "VersionInt" : null,
+      "VersionString" : "1.0.0"
+    },
+    "Location" : null,
+    "ProcessMode" : "interpretation"
+  },
+  "MetadataPackageRefs" : [ ],
+  "ProjectRefs" : null,
+  "ExternalRefs" : null,
+  "MdpkgRefs" : [ {
+    "Name" : "Inspur.Gsp.Common.CommonCmp",
+    "Version" : {
+      "VersionInt" : null,
+      "VersionString" : "1.0.0"
+    },
+    "Location" : null,
+    "ProcessMode" : "generation"
+  }, {
+    "Name" : "Inspur.Gsp.Common.CommonUdt",
+    "Version" : {
+      "VersionInt" : null,
+      "VersionString" : "1.0.0"
+    },
+    "Location" : null,
+    "ProcessMode" : "generation"
+  } ],
+  "MavenPackageRefs" : [ ],
+  "CsprojAssemblyName" : "Inspur.GS.AppOrder.DF.Organization.Organization.Back",
+  "ID" : "f4acc7fc-4658-4506-bb8a-394c2cbae7dc"
+}

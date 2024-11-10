@@ -1,0 +1,389 @@
+{
+  "Header" : {
+    "Code" : "StuCard_frm",
+    "Type" : "GSPViewModel",
+    "NameSpace" : "Inspur.GS.AppOrder.DF.Organization.Organization.Front",
+    "CertId" : null,
+    "Name" : "StuCard_frm",
+    "FileName" : "StuCard_frm.vo",
+    "BizobjectID" : "e410e4b3-cb73-6d38-ab0e-626b56ccf709",
+    "Language" : null,
+    "Extendable" : false,
+    "ID" : "d26288c3-006e-4cae-8a71-889db78f0722",
+    "IsTranslating" : false
+  },
+  "Refs" : [ {
+    "DependentMetadata" : {
+      "ID" : "e76f67d2-c50b-43d5-ac31-258165d2d26b",
+      "CertId" : null,
+      "NameSpace" : "Inspur.GS.AppOrder.DF.Organization.Organization.Back",
+      "Code" : "Student",
+      "Name" : "学生表",
+      "Type" : "GSPBusinessEntity",
+      "BizobjectID" : "e410e4b3-cb73-6d38-ab0e-626b56ccf709"
+    }
+  }, {
+    "DependentMetadata" : {
+      "ID" : "b0c5529f-88d1-4769-bb7a-5490d92893fa",
+      "CertId" : null,
+      "NameSpace" : "Inspur.Gsp.Common.CommonUdt",
+      "Code" : "PhoneNumber",
+      "Name" : "手机电话号码",
+      "Type" : "UnifiedDataType",
+      "BizobjectID" : "CommonUdt"
+    }
+  }, {
+    "DependentMetadata" : {
+      "ID" : "7b81be0f-fa0f-456c-9c58-7ab52433e9b2",
+      "CertId" : null,
+      "NameSpace" : "Inspur.Gsp.Common.CommonUdt",
+      "Code" : "Email",
+      "Name" : "邮箱",
+      "Type" : "UnifiedDataType",
+      "BizobjectID" : "CommonUdt"
+    }
+  }, {
+    "DependentMetadata" : {
+      "ID" : "4cdc8e22-2a0c-4ab7-9f95-29b4ad7b258c",
+      "CertId" : null,
+      "NameSpace" : "Inspur.GS.AppOrder.DF.Organization.Organization.Front",
+      "Code" : "StuCard_frm.vo",
+      "Name" : "StuCard_frm.vo",
+      "Type" : "ResourceMetadata",
+      "BizobjectID" : "e410e4b3-cb73-6d38-ab0e-626b56ccf709"
+    }
+  } ],
+  "Content" : {
+    "ID" : "d26288c3-006e-4cae-8a71-889db78f0722",
+    "Code" : "StuCard_frm",
+    "Name" : "StuCard_frm",
+    "GeneratingAssembly" : "Inspur.GS.AppOrder.DF.Organization.Organization.Front.Vo",
+    "IsUseNamespaceConfig" : true,
+    "IsSimplifyGen" : true,
+    "MainObject" : {
+      "ID" : "2539c484-2faa-4a8d-a434-ab56e8f3440a",
+      "Code" : "Student",
+      "Name" : "学生表",
+      "I18nResourceInfoPrefix" : "Inspur.GS.AppOrder.DF.Organization.Organization.Front.Vo.StuCard_frm.Student",
+      "ContainElements" : [ {
+        "ID" : "3680b8ad-39e9-4691-ba60-fe471d1b3813",
+        "LabelID" : "ID",
+        "ChildAssociations" : [ ],
+        "Code" : "ID",
+        "Name" : "主键",
+        "MDataType" : "String",
+        "Length" : 36,
+        "IsRequire" : true,
+        "EnableRtrim" : true,
+        "Mapping" : {
+          "MapType" : "Element",
+          "TargetMetadataId" : "e76f67d2-c50b-43d5-ac31-258165d2d26b",
+          "TargetObjId" : "4ae86e62-0726-49a3-a09e-eed9a5d8be7d",
+          "TargetObjectId" : "96b7f1d7-5333-4e15-bc60-e23d5a68971e",
+          "TargetElementId" : "4ae86e62-0726-49a3-a09e-eed9a5d8be7d"
+        }
+      }, {
+        "ID" : "5b730460-3b61-45ca-8142-0b6666d3ff50",
+        "LabelID" : "Version",
+        "ChildAssociations" : [ ],
+        "Code" : "Version",
+        "Name" : "版本",
+        "MDataType" : "DateTime",
+        "EnableRtrim" : true,
+        "Mapping" : {
+          "MapType" : "Element",
+          "TargetMetadataId" : "e76f67d2-c50b-43d5-ac31-258165d2d26b",
+          "TargetObjId" : "97521df5-8b00-4abe-8c2d-c555912b655e",
+          "TargetObjectId" : "96b7f1d7-5333-4e15-bc60-e23d5a68971e",
+          "TargetElementId" : "97521df5-8b00-4abe-8c2d-c555912b655e"
+        }
+      }, {
+        "ID" : "f600c0ec-36d2-4b9a-a8b0-a32e0285d454",
+        "LabelID" : "student_id",
+        "ChildAssociations" : [ ],
+        "Code" : "student_id",
+        "Name" : "学号",
+        "MDataType" : "String",
+        "Length" : 36,
+        "EnableRtrim" : true,
+        "Mapping" : {
+          "MapType" : "Element",
+          "TargetMetadataId" : "e76f67d2-c50b-43d5-ac31-258165d2d26b",
+          "TargetObjId" : "f183e061-eb19-4554-92e9-9e228863f9e5",
+          "TargetObjectId" : "96b7f1d7-5333-4e15-bc60-e23d5a68971e",
+          "TargetElementId" : "f183e061-eb19-4554-92e9-9e228863f9e5"
+        }
+      }, {
+        "ID" : "05ec4601-6b7f-460b-b509-40e16e12f815",
+        "LabelID" : "name",
+        "ChildAssociations" : [ ],
+        "Code" : "name",
+        "Name" : "姓名",
+        "MDataType" : "String",
+        "Length" : 36,
+        "IsRequire" : true,
+        "EnableRtrim" : true,
+        "Mapping" : {
+          "MapType" : "Element",
+          "TargetMetadataId" : "e76f67d2-c50b-43d5-ac31-258165d2d26b",
+          "TargetObjId" : "c0c5a895-b4ad-4308-a638-8c17264821e7",
+          "TargetObjectId" : "96b7f1d7-5333-4e15-bc60-e23d5a68971e",
+          "TargetElementId" : "c0c5a895-b4ad-4308-a638-8c17264821e7"
+        }
+      }, {
+        "ID" : "59a52474-09ba-4b7f-97a6-b54b7c4bbbe3",
+        "LabelID" : "gender",
+        "ChildAssociations" : [ ],
+        "Code" : "gender",
+        "Name" : "性别",
+        "ObjectType" : "Enum",
+        "MDataType" : "String",
+        "Length" : 36,
+        "EnableRtrim" : true,
+        "EnumIndexType" : 1,
+        "ContainEnumValues" : [ {
+          "I18nResourceInfoPrefix" : "Inspur.GS.AppOrder.DF.Organization.Organization.Front.Vo.StuCard_frm.Student.gender.man",
+          "Index" : 0,
+          "IsDefaultEnum" : true,
+          "StringIndex" : "man",
+          "Value" : "man",
+          "Name" : "男"
+        }, {
+          "I18nResourceInfoPrefix" : "Inspur.GS.AppOrder.DF.Organization.Organization.Front.Vo.StuCard_frm.Student.gender.woman",
+          "Index" : 1,
+          "IsDefaultEnum" : false,
+          "StringIndex" : "woman",
+          "Value" : "woman",
+          "Name" : "女"
+        } ],
+        "Mapping" : {
+          "MapType" : "Element",
+          "TargetMetadataId" : "e76f67d2-c50b-43d5-ac31-258165d2d26b",
+          "TargetObjId" : "4ab35753-eef9-4167-a716-3f2319871b8e",
+          "TargetObjectId" : "96b7f1d7-5333-4e15-bc60-e23d5a68971e",
+          "TargetElementId" : "4ab35753-eef9-4167-a716-3f2319871b8e"
+        }
+      }, {
+        "ID" : "475ed361-309b-4f1a-8a66-b9bf72031ff7",
+        "LabelID" : "password",
+        "ChildAssociations" : [ ],
+        "Code" : "password",
+        "Name" : "密码",
+        "MDataType" : "String",
+        "Length" : 36,
+        "EnableRtrim" : true,
+        "Mapping" : {
+          "MapType" : "Element",
+          "TargetMetadataId" : "e76f67d2-c50b-43d5-ac31-258165d2d26b",
+          "TargetObjId" : "92bc07f2-591b-434b-a6ae-c508e40e1574",
+          "TargetObjectId" : "96b7f1d7-5333-4e15-bc60-e23d5a68971e",
+          "TargetElementId" : "92bc07f2-591b-434b-a6ae-c508e40e1574"
+        }
+      }, {
+        "ID" : "e01f1a35-65be-4259-89ea-ebbd5e55e65d",
+        "LabelID" : "birth",
+        "ChildAssociations" : [ ],
+        "Code" : "birth",
+        "Name" : "生日",
+        "MDataType" : "Date",
+        "IsRequire" : true,
+        "EnableRtrim" : true,
+        "Mapping" : {
+          "MapType" : "Element",
+          "TargetMetadataId" : "e76f67d2-c50b-43d5-ac31-258165d2d26b",
+          "TargetObjId" : "bb8955bb-6df2-4bf8-b6db-ff05d20dce92",
+          "TargetObjectId" : "96b7f1d7-5333-4e15-bc60-e23d5a68971e",
+          "TargetElementId" : "bb8955bb-6df2-4bf8-b6db-ff05d20dce92"
+        }
+      }, {
+        "ID" : "498f38ff-f012-49d4-832d-c612766635e2",
+        "LabelID" : "major",
+        "ChildAssociations" : [ ],
+        "Code" : "major",
+        "Name" : "专业名称",
+        "ObjectType" : "Enum",
+        "MDataType" : "String",
+        "Length" : 36,
+        "EnableRtrim" : true,
+        "EnumIndexType" : 1,
+        "ContainEnumValues" : [ {
+          "I18nResourceInfoPrefix" : "Inspur.GS.AppOrder.DF.Organization.Organization.Front.Vo.StuCard_frm.Student.major.cs",
+          "Index" : 0,
+          "IsDefaultEnum" : true,
+          "StringIndex" : "cs",
+          "Value" : "cs",
+          "Name" : "计算机"
+        }, {
+          "I18nResourceInfoPrefix" : "Inspur.GS.AppOrder.DF.Organization.Organization.Front.Vo.StuCard_frm.Student.major.math",
+          "Index" : 1,
+          "IsDefaultEnum" : false,
+          "StringIndex" : "math",
+          "Value" : "math",
+          "Name" : "数学"
+        }, {
+          "I18nResourceInfoPrefix" : "Inspur.GS.AppOrder.DF.Organization.Organization.Front.Vo.StuCard_frm.Student.major.Chinese",
+          "Index" : 2,
+          "IsDefaultEnum" : false,
+          "StringIndex" : "Chinese",
+          "Value" : "Chinese",
+          "Name" : "中文"
+        }, {
+          "I18nResourceInfoPrefix" : "Inspur.GS.AppOrder.DF.Organization.Organization.Front.Vo.StuCard_frm.Student.major.falv",
+          "Index" : 3,
+          "IsDefaultEnum" : false,
+          "StringIndex" : "falv",
+          "Value" : "falv",
+          "Name" : "法律"
+        } ],
+        "Mapping" : {
+          "MapType" : "Element",
+          "TargetMetadataId" : "e76f67d2-c50b-43d5-ac31-258165d2d26b",
+          "TargetObjId" : "b848ae28-013f-4448-a156-b477850bc5eb",
+          "TargetObjectId" : "96b7f1d7-5333-4e15-bc60-e23d5a68971e",
+          "TargetElementId" : "b848ae28-013f-4448-a156-b477850bc5eb"
+        }
+      }, {
+        "ID" : "fdbd27d1-d2fd-46c8-83d3-65cd4f833823",
+        "LabelID" : "phone",
+        "ChildAssociations" : [ ],
+        "ChildElements" : [ {
+          "ID" : "0c73aa34-bf71-43e5-a950-c59eedccee56",
+          "LabelID" : "phone_PhoneNumber",
+          "I18nResourceInfoPrefix" : "",
+          "ChildAssociations" : [ ],
+          "Code" : "phone_PhoneNumber",
+          "Name" : "手机电话号码",
+          "MDataType" : "String",
+          "Length" : 36,
+          "EnableRtrim" : true,
+          "Mapping" : {
+            "MapType" : "Element",
+            "TargetMetadataId" : "e76f67d2-c50b-43d5-ac31-258165d2d26b",
+            "TargetObjId" : "210ea934-c538-4f1a-a3e1-452dae882696",
+            "TargetObjectId" : "",
+            "TargetElementId" : "210ea934-c538-4f1a-a3e1-452dae882696"
+          }
+        } ],
+        "Code" : "phone",
+        "Name" : "手机电话号码",
+        "MDataType" : "String",
+        "Length" : 36,
+        "IsRequire" : true,
+        "IsUdt" : true,
+        "EnableRtrim" : true,
+        "UdtID" : "b0c5529f-88d1-4769-bb7a-5490d92893fa",
+        "UdtName" : "手机电话号码",
+        "Mapping" : {
+          "MapType" : "Element",
+          "TargetMetadataId" : "e76f67d2-c50b-43d5-ac31-258165d2d26b",
+          "TargetObjId" : "f29868ab-86bc-4306-bd7c-00642d4f50b1",
+          "TargetObjectId" : "96b7f1d7-5333-4e15-bc60-e23d5a68971e",
+          "TargetElementId" : "f29868ab-86bc-4306-bd7c-00642d4f50b1"
+        }
+      }, {
+        "ID" : "866d9869-cea4-4e12-829b-f0588a36d50d",
+        "LabelID" : "Email",
+        "ChildAssociations" : [ ],
+        "ChildElements" : [ {
+          "ID" : "8a2d8412-2b25-479c-bad9-15a6f96b3bbd",
+          "LabelID" : "Email_Email",
+          "I18nResourceInfoPrefix" : "",
+          "ChildAssociations" : [ ],
+          "Code" : "Email_Email",
+          "Name" : "邮箱",
+          "MDataType" : "String",
+          "Length" : 500,
+          "EnableRtrim" : true,
+          "Mapping" : {
+            "MapType" : "Element",
+            "TargetMetadataId" : "e76f67d2-c50b-43d5-ac31-258165d2d26b",
+            "TargetObjId" : "3922a688-0172-43ed-ae4f-7f4518634be6",
+            "TargetObjectId" : "",
+            "TargetElementId" : "3922a688-0172-43ed-ae4f-7f4518634be6"
+          }
+        } ],
+        "Code" : "Email",
+        "Name" : "邮箱",
+        "MDataType" : "String",
+        "Length" : 500,
+        "IsRequire" : true,
+        "IsUdt" : true,
+        "EnableRtrim" : true,
+        "UdtID" : "7b81be0f-fa0f-456c-9c58-7ab52433e9b2",
+        "UdtName" : "邮箱",
+        "Mapping" : {
+          "MapType" : "Element",
+          "TargetMetadataId" : "e76f67d2-c50b-43d5-ac31-258165d2d26b",
+          "TargetObjId" : "7da92e51-aee6-446a-8b00-caa7802fb2f3",
+          "TargetObjectId" : "96b7f1d7-5333-4e15-bc60-e23d5a68971e",
+          "TargetElementId" : "7da92e51-aee6-446a-8b00-caa7802fb2f3"
+        }
+      }, {
+        "ID" : "8f5ef340-ac97-4d88-aea7-818c2012b32c",
+        "LabelID" : "State",
+        "ChildAssociations" : [ ],
+        "Code" : "State",
+        "Name" : "状态",
+        "ObjectType" : "Enum",
+        "MDataType" : "String",
+        "Length" : 36,
+        "EnableRtrim" : true,
+        "EnumIndexType" : 1,
+        "ContainEnumValues" : [ {
+          "I18nResourceInfoPrefix" : "Inspur.GS.AppOrder.DF.Organization.Organization.Front.Vo.StuCard_frm.Student.State.zc",
+          "Index" : 0,
+          "IsDefaultEnum" : true,
+          "StringIndex" : "zc",
+          "Value" : "zc",
+          "Name" : "正常"
+        }, {
+          "I18nResourceInfoPrefix" : "Inspur.GS.AppOrder.DF.Organization.Organization.Front.Vo.StuCard_frm.Student.State.jy",
+          "Index" : 1,
+          "IsDefaultEnum" : false,
+          "StringIndex" : "jy",
+          "Value" : "jy",
+          "Name" : "禁用"
+        } ],
+        "Mapping" : {
+          "MapType" : "Element",
+          "TargetMetadataId" : "e76f67d2-c50b-43d5-ac31-258165d2d26b",
+          "TargetObjId" : "a40a81e4-8059-45a5-8a89-1a0648605e5a",
+          "TargetObjectId" : "96b7f1d7-5333-4e15-bc60-e23d5a68971e",
+          "TargetElementId" : "a40a81e4-8059-45a5-8a89-1a0648605e5a"
+        }
+      } ],
+      "RefObjectName" : "d5ce7e71-2c2f-4dc3-8049-30647a526598",
+      "ColumnGenerateID" : {
+        "ColumnParameters" : [ ],
+        "ElementID" : "3680b8ad-39e9-4691-ba60-fe471d1b3813",
+        "GenerateType" : "Guid"
+      },
+      "BelongModelID" : "d26288c3-006e-4cae-8a71-889db78f0722",
+      "Mapping" : {
+        "MapType" : "BEObject",
+        "TargetMetadataId" : "e76f67d2-c50b-43d5-ac31-258165d2d26b",
+        "TargetObjId" : "96b7f1d7-5333-4e15-bc60-e23d5a68971e"
+      }
+    },
+    "Variables" : {
+      "ID" : "796b9214-f63c-40ad-8c70-f5f21998cfe1",
+      "Code" : "StuCard_frmVariable",
+      "Name" : "StuCard_frm变量",
+      "I18nResourceInfoPrefix" : ""
+    },
+    "ConvertMsg" : false,
+    "Mapping" : {
+      "MapType" : "BizEntity",
+      "TargetMetadataId" : "e76f67d2-c50b-43d5-ac31-258165d2d26b",
+      "TargetObjId" : "e76f67d2-c50b-43d5-ac31-258165d2d26b"
+    },
+    "ExtendProperties" : { }
+  },
+  "ExtendRule" : null,
+  "RelativePath" : "AppOrder/DF/Organization/bo-organization-front/metadata/components",
+  "ExtendProperty" : "",
+  "Extended" : false,
+  "PreviousVersion" : null,
+  "Version" : null,
+  "Properties" : null
+}

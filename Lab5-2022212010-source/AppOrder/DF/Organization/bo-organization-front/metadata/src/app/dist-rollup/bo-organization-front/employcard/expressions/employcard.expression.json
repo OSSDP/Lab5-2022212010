@@ -1,0 +1,1 @@
+[{"path":"remark","ns":"","type":"Field","expressions":[{"id":"d42ea20c-50af-49cf-b7db-7d7b41ff1ffd_require","type":"require","value":"Employee.state=='tz'","message":"停止要写备注","messageType":null}]}]

@@ -1,0 +1,62 @@
+{
+  "NameSpace" : "Inspur.GS.AppOrder.DF.Organization.Organization.Front",
+  "Name" : "bo-Organization-Front",
+  "ProjectFileName" : "bo-Organization-Front.mdproj",
+  "ProjectPath" : "AppOrder/DF/Organization/bo-organization-front/metadata",
+  "MetadataPackageInfo" : {
+    "Name" : "Inspur.GS.AppOrder.DF.Organization.Organization.Front",
+    "Version" : {
+      "VersionInt" : null,
+      "VersionString" : "1.0.0"
+    },
+    "Location" : null,
+    "ProcessMode" : "interpretation"
+  },
+  "MetadataPackageRefs" : [ {
+    "Name" : "Inspur.GS.AppOrder.DF.Employee.Employee.Back",
+    "Version" : {
+      "VersionInt" : null,
+      "VersionString" : "1.0.0"
+    },
+    "Location" : null,
+    "ProcessMode" : "interpretation"
+  }, {
+    "Name" : "Inspur.GS.AppOrder.DF.Organization.Organization.Back",
+    "Version" : {
+      "VersionInt" : null,
+      "VersionString" : "1.0.0"
+    },
+    "Location" : null,
+    "ProcessMode" : "interpretation"
+  } ],
+  "ProjectRefs" : [ {
+    "Name" : "Inspur.GS.AppOrder.DF.Organization.Organization.Back",
+    "ProjectPath" : "../../../df/organization/bo-organization-back"
+  }, {
+    "Name" : "Inspur.GS.AppOrder.DF.Employee.Employee.Back",
+    "ProjectPath" : "../../../../AppOrder/DF/Employee/bo-employee-back"
+  } ],
+  "ExternalRefs" : null,
+  "MdpkgRefs" : [ {
+    "Name" : "Inspur.GS.Gsp.Web.WebCmp",
+    "Version" : {
+      "VersionInt" : null,
+      "VersionString" : "1.0.0"
+    },
+    "Location" : null,
+    "ProcessMode" : "generation"
+  } ],
+  "MavenPackageRefs" : [ {
+    "GroupId" : "com.inspur.gs",
+    "ArtifactId" : "apporder-df-organization-organization-back-api",
+    "Version" : "m0.1.0-SNAPSHOT",
+    "MetadataPackageName" : "Inspur.GS.AppOrder.DF.Organization.Organization.Back"
+  }, {
+    "GroupId" : "com.inspur.gs",
+    "ArtifactId" : "apporder-df-employee-employee-back-api",
+    "Version" : "m0.1.0-SNAPSHOT",
+    "MetadataPackageName" : "Inspur.GS.AppOrder.DF.Employee.Employee.Back"
+  } ],
+  "CsprojAssemblyName" : "Inspur.GS.AppOrder.DF.Organization.Organization.Front",
+  "ID" : "9b5f6798-3989-4a87-ad63-dcc8f17e4a64"
+}

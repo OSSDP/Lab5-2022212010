@@ -1,0 +1,394 @@
+{
+  "Header" : {
+    "Code" : "Course",
+    "Type" : "HelpMetadata",
+    "NameSpace" : "Inspur.GS.AppOrder.DF.Organization.Organization.Front",
+    "CertId" : null,
+    "Name" : "课程",
+    "FileName" : "Course.hlp",
+    "BizobjectID" : "e410e4b3-cb73-6d38-ab0e-626b56ccf709",
+    "Language" : null,
+    "Extendable" : false,
+    "ID" : "adb2f5b7-a08e-4c77-8f8d-a94d1da714d0",
+    "IsTranslating" : false
+  },
+  "Refs" : [ {
+    "DependentMetadata" : {
+      "ID" : "1dd7398e-c37a-4f00-af53-aaf4b62ad84b",
+      "CertId" : null,
+      "NameSpace" : "Inspur.GS.AppOrder.DF.Organization.Organization.Front",
+      "Code" : "Course_hlp",
+      "Name" : "课程_ViewObject",
+      "Type" : "GSPViewModel",
+      "BizobjectID" : "e410e4b3-cb73-6d38-ab0e-626b56ccf709"
+    }
+  } ],
+  "Content" : {
+    "code" : "Course",
+    "name" : "课程",
+    "version" : "0.0.1",
+    "id" : "adb2f5b7-a08e-4c77-8f8d-a94d1da714d0",
+    "title" : "课程",
+    "idField" : "id",
+    "idFieldName" : "主键",
+    "textField" : "course_name",
+    "textFieldName" : "课程名称",
+    "valueField" : "id",
+    "valueFieldName" : "主键",
+    "displayType" : "List",
+    "description" : null,
+    "dataSource" : {
+      "columns" : [ {
+        "field" : "course_name",
+        "title" : "课程名称",
+        "width" : 100,
+        "fieldPath" : "course_name",
+        "fieldType" : null,
+        "supportSearch" : true,
+        "align" : "left",
+        "formatter" : null,
+        "sortable" : false,
+        "order" : null,
+        "precision" : 0,
+        "hAlign" : "left"
+      }, {
+        "field" : "courseId",
+        "title" : "课程编号",
+        "width" : 100,
+        "fieldPath" : "courseId",
+        "fieldType" : null,
+        "supportSearch" : true,
+        "align" : "left",
+        "formatter" : null,
+        "sortable" : false,
+        "order" : null,
+        "precision" : 0,
+        "hAlign" : "left"
+      } ],
+      "sourceType" : "BE",
+      "sourcePath" : "AppOrder/DF/Organization/bo-organization-back/metadata/be/Course.be",
+      "sourceName" : "课程表",
+      "sourceId" : "a780589e-5fce-49c0-a5e9-aacca560c654",
+      "uri" : "AppOrder/DF/Organization/bo-organization-front/metadata/lookups/Course_hlp.vo",
+      "vmCode" : "Inspur.GS.AppOrder.DF.Organization.Organization.Front.Vo.Course_hlp",
+      "voSourceId" : "1dd7398e-c37a-4f00-af53-aaf4b62ad84b",
+      "conditions" : [ ],
+      "sorts" : [ ],
+      "pageInfo" : {
+        "pageList" : [ 10, 20, 30, 50 ],
+        "pageSize" : 20,
+        "pageIndex" : 0,
+        "enablePager" : true
+      },
+      "treeInfo" : {
+        "loadDataType" : "async",
+        "layerType" : "pathcode",
+        "dataField" : "",
+        "pathField" : "path",
+        "layerField" : "layer",
+        "isDetailField" : "isDetail",
+        "onlySelectLeaf" : false,
+        "parentField" : "parentElement",
+        "treeDataIsInit" : false
+      }
+    },
+    "navigation" : null,
+    "languages" : null,
+    "schema" : {
+      "main" : {
+        "eapiId" : null,
+        "eapiCode" : null,
+        "eapiName" : null,
+        "eapiNameSpace" : null,
+        "voPath" : null,
+        "voNameSpace" : null,
+        "entities" : [ {
+          "label" : "courses",
+          "id" : "46674a2d-fab7-4f65-aa7d-a005d847562f",
+          "type" : {
+            "$type" : "EntityType",
+            "entities" : [ ],
+            "fields" : [ {
+              "$type" : "SimpleField",
+              "require" : true,
+              "multiLanguage" : false,
+              "editor" : {
+                "$type" : "TextBox"
+              },
+              "defaultValue" : "",
+              "readonly" : false,
+              "label" : "id",
+              "id" : "fcec6e8f-3cd4-43e0-9ea7-06dae94c99a7_ID",
+              "path" : "ID",
+              "type" : {
+                "$type" : "StringType",
+                "displayName" : "字符串",
+                "length" : 36,
+                "name" : "String"
+              },
+              "code" : "ID",
+              "originalId" : "fcec6e8f-3cd4-43e0-9ea7-06dae94c99a7",
+              "bindingPath" : "id",
+              "bindingField" : "id",
+              "name" : "主键",
+              "parentPath" : ""
+            }, {
+              "$type" : "SimpleField",
+              "require" : false,
+              "multiLanguage" : false,
+              "editor" : {
+                "$type" : "DateBox",
+                "format" : "'yyyy-MM-dd'"
+              },
+              "defaultValue" : "",
+              "readonly" : false,
+              "label" : "version",
+              "id" : "e218c4f6-ada5-48e6-b5d2-98e3a672dc58_Version",
+              "path" : "Version",
+              "type" : {
+                "$type" : "DateTimeType",
+                "displayName" : "日期时间",
+                "name" : "DateTime"
+              },
+              "code" : "Version",
+              "originalId" : "e218c4f6-ada5-48e6-b5d2-98e3a672dc58",
+              "bindingPath" : "version",
+              "bindingField" : "version",
+              "name" : "版本",
+              "parentPath" : ""
+            }, {
+              "$type" : "SimpleField",
+              "require" : false,
+              "multiLanguage" : false,
+              "editor" : {
+                "$type" : "TextBox"
+              },
+              "defaultValue" : "",
+              "readonly" : false,
+              "label" : "courseId",
+              "id" : "7a777980-a1ae-41c0-8255-c4c9fbf47b71_courseId",
+              "path" : "courseId",
+              "type" : {
+                "$type" : "StringType",
+                "displayName" : "字符串",
+                "length" : 36,
+                "name" : "String"
+              },
+              "code" : "courseId",
+              "originalId" : "7a777980-a1ae-41c0-8255-c4c9fbf47b71",
+              "bindingPath" : "courseId",
+              "bindingField" : "courseId",
+              "name" : "课程编号",
+              "parentPath" : ""
+            }, {
+              "$type" : "SimpleField",
+              "require" : true,
+              "multiLanguage" : false,
+              "editor" : {
+                "$type" : "TextBox"
+              },
+              "defaultValue" : "",
+              "readonly" : false,
+              "label" : "course_name",
+              "id" : "19c44d92-6111-4cee-9bec-8cc93af7f9fe_course_name",
+              "path" : "course_name",
+              "type" : {
+                "$type" : "StringType",
+                "displayName" : "字符串",
+                "length" : 36,
+                "name" : "String"
+              },
+              "code" : "course_name",
+              "originalId" : "19c44d92-6111-4cee-9bec-8cc93af7f9fe",
+              "bindingPath" : "course_name",
+              "bindingField" : "course_name",
+              "name" : "课程名称",
+              "parentPath" : ""
+            }, {
+              "$type" : "SimpleField",
+              "require" : true,
+              "multiLanguage" : false,
+              "editor" : {
+                "$type" : "TextBox"
+              },
+              "defaultValue" : "",
+              "readonly" : false,
+              "label" : "credits",
+              "id" : "0341962c-676b-486f-bc65-8bbeba6936f2_credits",
+              "path" : "credits",
+              "type" : {
+                "$type" : "StringType",
+                "displayName" : "字符串",
+                "length" : 36,
+                "name" : "String"
+              },
+              "code" : "credits",
+              "originalId" : "0341962c-676b-486f-bc65-8bbeba6936f2",
+              "bindingPath" : "credits",
+              "bindingField" : "credits",
+              "name" : "课程学分",
+              "parentPath" : ""
+            }, {
+              "$type" : "SimpleField",
+              "require" : true,
+              "multiLanguage" : false,
+              "editor" : {
+                "$type" : "TextBox"
+              },
+              "defaultValue" : "",
+              "readonly" : false,
+              "label" : "teacher_id",
+              "id" : "ebeec1ca-cfce-484e-a610-f9d12f18e809_teacher_id",
+              "path" : "teacher_id",
+              "type" : {
+                "$type" : "StringType",
+                "displayName" : "字符串",
+                "length" : 36,
+                "name" : "String"
+              },
+              "code" : "teacher_id",
+              "originalId" : "ebeec1ca-cfce-484e-a610-f9d12f18e809",
+              "bindingPath" : "teacher_id",
+              "bindingField" : "teacher_id",
+              "name" : "授课教师",
+              "parentPath" : ""
+            }, {
+              "$type" : "SimpleField",
+              "require" : false,
+              "multiLanguage" : false,
+              "editor" : {
+                "$type" : "TextBox"
+              },
+              "defaultValue" : "",
+              "readonly" : false,
+              "label" : "max_students",
+              "id" : "96679dbf-b3dd-4784-b1cb-52f78c2e792b_max_students",
+              "path" : "max_students",
+              "type" : {
+                "$type" : "StringType",
+                "displayName" : "字符串",
+                "length" : 36,
+                "name" : "String"
+              },
+              "code" : "max_students",
+              "originalId" : "96679dbf-b3dd-4784-b1cb-52f78c2e792b",
+              "bindingPath" : "max_students",
+              "bindingField" : "max_students",
+              "name" : "最大选课人数",
+              "parentPath" : ""
+            }, {
+              "$type" : "SimpleField",
+              "require" : false,
+              "multiLanguage" : false,
+              "editor" : {
+                "$type" : "TextBox"
+              },
+              "defaultValue" : "",
+              "readonly" : false,
+              "label" : "semester",
+              "id" : "6a1697ee-4e24-4e13-a9a4-0f0b86a06690_semester",
+              "path" : "semester",
+              "type" : {
+                "$type" : "StringType",
+                "displayName" : "字符串",
+                "length" : 36,
+                "name" : "String"
+              },
+              "code" : "semester",
+              "originalId" : "6a1697ee-4e24-4e13-a9a4-0f0b86a06690",
+              "bindingPath" : "semester",
+              "bindingField" : "semester",
+              "name" : "课程学期",
+              "parentPath" : ""
+            }, {
+              "$type" : "SimpleField",
+              "require" : true,
+              "multiLanguage" : false,
+              "editor" : {
+                "$type" : "TextBox"
+              },
+              "defaultValue" : "",
+              "readonly" : false,
+              "label" : "schedule",
+              "id" : "76bcff98-05c1-4881-89f9-73bebbad581d_schedule",
+              "path" : "schedule",
+              "type" : {
+                "$type" : "StringType",
+                "displayName" : "字符串",
+                "length" : 36,
+                "name" : "String"
+              },
+              "code" : "schedule",
+              "originalId" : "76bcff98-05c1-4881-89f9-73bebbad581d",
+              "bindingPath" : "schedule",
+              "bindingField" : "schedule",
+              "name" : "课程安排",
+              "parentPath" : ""
+            }, {
+              "$type" : "SimpleField",
+              "require" : false,
+              "multiLanguage" : false,
+              "editor" : {
+                "$type" : "EnumField"
+              },
+              "defaultValue" : "",
+              "readonly" : false,
+              "label" : "state",
+              "id" : "f76222cd-adfc-4678-98ca-9c99758462aa_State",
+              "path" : "State",
+              "type" : {
+                "$type" : "EnumType",
+                "valueType" : {
+                  "$type" : "StringType",
+                  "displayName" : "字符串",
+                  "length" : 36,
+                  "name" : "String"
+                },
+                "enumValues" : [ {
+                  "disabled" : false,
+                  "name" : "进行中",
+                  "value" : "jxz"
+                }, {
+                  "disabled" : false,
+                  "name" : "已结束",
+                  "value" : "yjs"
+                } ],
+                "displayName" : "枚举",
+                "name" : "Enum"
+              },
+              "code" : "State",
+              "originalId" : "f76222cd-adfc-4678-98ca-9c99758462aa",
+              "bindingPath" : "state",
+              "bindingField" : "state",
+              "name" : "课程状态",
+              "parentPath" : ""
+            } ],
+            "primary" : "id",
+            "displayName" : "课程表",
+            "name" : "Course"
+          },
+          "code" : "Course",
+          "name" : "课程表"
+        } ],
+        "id" : "1dd7398e-c37a-4f00-af53-aaf4b62ad84b",
+        "sourceType" : "vo",
+        "variables" : [ ],
+        "extendProperties" : {
+          "enableStdTimeFormat" : true
+        },
+        "code" : "Course_hlp",
+        "sourceUri" : null,
+        "name" : "课程_ViewObject"
+      }
+    },
+    "initDataSource" : false,
+    "createTime" : "2024-11-08 22:53:53"
+  },
+  "ExtendRule" : null,
+  "RelativePath" : "AppOrder/DF/Organization/bo-organization-front/metadata/lookups",
+  "ExtendProperty" : "",
+  "Extended" : false,
+  "PreviousVersion" : null,
+  "Version" : null,
+  "Properties" : null
+}

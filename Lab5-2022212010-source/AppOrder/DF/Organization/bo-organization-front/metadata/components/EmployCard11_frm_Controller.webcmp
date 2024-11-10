@@ -1,0 +1,43 @@
+{
+  "Header" : {
+    "Code" : "EmployCard11_frm_Controller",
+    "Type" : "WebComponent",
+    "NameSpace" : "Inspur.GS.AppOrder.DF.Organization.Organization.Front",
+    "CertId" : null,
+    "Name" : "111_frm_Controller",
+    "FileName" : "EmployCard11_frm_Controller.webcmp",
+    "BizobjectID" : "e410e4b3-cb73-6d38-ab0e-626b56ccf709",
+    "Language" : null,
+    "Extendable" : false,
+    "ID" : "53690fb5-6f25-4601-a243-6d8b7da24dca",
+    "IsTranslating" : false
+  },
+  "Refs" : [ ],
+  "Content" : {
+    "name" : "111_frm_Controller",
+    "application" : "AppOrder",
+    "serviceUnit" : "DF",
+    "version" : "1.0",
+    "refStructures" : [ ],
+    "resource" : {
+      "sourceFile" : "AppOrder/DF/Organization/bo-organization-front/metadata/components/EmployCard11_frm_Controller.ts",
+      "className" : null,
+      "kind" : "TypeScriptClass"
+    },
+    "Code" : "EmployCard11_frm_Controller",
+    "Id" : "53690fb5-6f25-4601-a243-6d8b7da24dca",
+    "Description" : null,
+    "Operations" : [ ],
+    "IsCommon" : false,
+    "ClassName" : null,
+    "FormCode" : "EmployCard11",
+    "Source" : "AppOrder/DF/Organization/bo-organization-front/metadata/components/EmployCard11_frm_Controller.ts"
+  },
+  "ExtendRule" : null,
+  "RelativePath" : "AppOrder/DF/Organization/bo-organization-front/metadata/components",
+  "ExtendProperty" : "{\"IsCommon\":false,\"FormCode\":\"EmployCard11\"}",
+  "Extended" : false,
+  "PreviousVersion" : null,
+  "Version" : null,
+  "Properties" : null
+}

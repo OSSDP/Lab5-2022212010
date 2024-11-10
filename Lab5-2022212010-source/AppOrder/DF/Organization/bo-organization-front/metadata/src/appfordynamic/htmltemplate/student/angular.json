@@ -1,0 +1,50 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {
+    "web-page-templates": {
+      "root": "projects/web-page-templates/",
+      "sourceRoot": "projects/web-page-templates/src",
+      "projectType": "application",
+      "prefix": "app",
+      "schematics": {},
+      "architect": {
+        "build": {
+          "builder": "@farris/farris-rollup:build",
+          "options": {
+            "format": "system",
+            "outputPath": "dist-rollup/web-page-templates",
+            "ngcOut": "out-tsc/app/projects/web-page-templates",
+            "tsConfig": "projects/web-page-templates/tsconfig.app.json",
+            "excludeNgFactory": true,
+            "entry": {
+              "webapp-templates.module": {
+                "entry": "src/app/app.module.js"
+              },
+              "webapp-templates.module.ngfactory": {
+                "entry": "src/app/app.module.ngfactory.js"
+              }
+            },
+            "uglify": false,
+            "hash": false,
+            "libs": {
+              "entry": ".js"
+            },
+            "linkedNodeModules": "D:/inbuilder_community_2406_x86_64_build20240630/inbuilder_community_2406_x86_64_build20240630/demo/workspace_demo/node_modules",
+            "libsPath": "D:/inbuilder_community_2406_x86_64_build20240630/inbuilder_community_2406_x86_64_build20240630/demo/workspace_demo/node_modules/@farris/farris-rollup/src/build/libsWithNgFactory.json",
+            "serve": false,
+            "visualize":false
+          },
+          "configurations": {
+            "production": {
+              "uglify": true,
+              "visualize": true
+            }
+          }
+        }
+      }
+    }
+  },
+  "defaultProject": "web-page-templates"
+}

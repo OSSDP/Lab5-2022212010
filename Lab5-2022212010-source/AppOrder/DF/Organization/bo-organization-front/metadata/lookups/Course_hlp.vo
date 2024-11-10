@@ -1,0 +1,264 @@
+{
+  "Header" : {
+    "Code" : "Course_hlp",
+    "Type" : "GSPViewModel",
+    "NameSpace" : "Inspur.GS.AppOrder.DF.Organization.Organization.Front",
+    "CertId" : null,
+    "Name" : "课程_ViewObject",
+    "FileName" : "Course_hlp.vo",
+    "BizobjectID" : "e410e4b3-cb73-6d38-ab0e-626b56ccf709",
+    "Language" : null,
+    "Extendable" : false,
+    "ID" : "1dd7398e-c37a-4f00-af53-aaf4b62ad84b",
+    "IsTranslating" : false
+  },
+  "Refs" : [ {
+    "DependentMetadata" : {
+      "ID" : "a780589e-5fce-49c0-a5e9-aacca560c654",
+      "CertId" : null,
+      "NameSpace" : "Inspur.GS.AppOrder.DF.Organization.Organization.Back",
+      "Code" : "Course",
+      "Name" : "课程表",
+      "Type" : "GSPBusinessEntity",
+      "BizobjectID" : "e410e4b3-cb73-6d38-ab0e-626b56ccf709"
+    }
+  } ],
+  "Content" : {
+    "ID" : "1dd7398e-c37a-4f00-af53-aaf4b62ad84b",
+    "Code" : "Course_hlp",
+    "Name" : "课程_ViewObject",
+    "GeneratingAssembly" : "Inspur.GS.AppOrder.DF.Organization.Organization.Front.Vo",
+    "IsUseNamespaceConfig" : true,
+    "IsSimplifyGen" : true,
+    "MainObject" : {
+      "ID" : "46674a2d-fab7-4f65-aa7d-a005d847562f",
+      "Code" : "Course",
+      "Name" : "课程表",
+      "I18nResourceInfoPrefix" : "",
+      "ContainElements" : [ {
+        "ID" : "fcec6e8f-3cd4-43e0-9ea7-06dae94c99a7",
+        "LabelID" : "ID",
+        "I18nResourceInfoPrefix" : ".ID",
+        "ChildAssociations" : [ ],
+        "Code" : "ID",
+        "Name" : "主键",
+        "MDataType" : "String",
+        "Length" : 36,
+        "IsRequire" : true,
+        "EnableRtrim" : true,
+        "Mapping" : {
+          "MapType" : "Element",
+          "TargetMetadataId" : "a780589e-5fce-49c0-a5e9-aacca560c654",
+          "TargetObjId" : "e7da3dc4-5e45-4c3b-8c6f-fc5a2c81c75b",
+          "TargetObjectId" : "7c61662b-7b22-4c30-a37f-608f7ddb316a",
+          "TargetElementId" : "e7da3dc4-5e45-4c3b-8c6f-fc5a2c81c75b"
+        }
+      }, {
+        "ID" : "e218c4f6-ada5-48e6-b5d2-98e3a672dc58",
+        "LabelID" : "Version",
+        "I18nResourceInfoPrefix" : ".Version",
+        "ChildAssociations" : [ ],
+        "Code" : "Version",
+        "Name" : "版本",
+        "MDataType" : "DateTime",
+        "EnableRtrim" : true,
+        "Mapping" : {
+          "MapType" : "Element",
+          "TargetMetadataId" : "a780589e-5fce-49c0-a5e9-aacca560c654",
+          "TargetObjId" : "39d0d6ff-5920-431b-903c-2c12e0c42b03",
+          "TargetObjectId" : "7c61662b-7b22-4c30-a37f-608f7ddb316a",
+          "TargetElementId" : "39d0d6ff-5920-431b-903c-2c12e0c42b03"
+        }
+      }, {
+        "ID" : "7a777980-a1ae-41c0-8255-c4c9fbf47b71",
+        "LabelID" : "courseId",
+        "I18nResourceInfoPrefix" : ".courseId",
+        "ChildAssociations" : [ ],
+        "Code" : "courseId",
+        "Name" : "课程编号",
+        "MDataType" : "String",
+        "Length" : 36,
+        "EnableRtrim" : true,
+        "Mapping" : {
+          "MapType" : "Element",
+          "TargetMetadataId" : "a780589e-5fce-49c0-a5e9-aacca560c654",
+          "TargetObjId" : "8c72e32b-edd1-4bd2-85bc-798e4874073c",
+          "TargetObjectId" : "7c61662b-7b22-4c30-a37f-608f7ddb316a",
+          "TargetElementId" : "8c72e32b-edd1-4bd2-85bc-798e4874073c"
+        }
+      }, {
+        "ID" : "19c44d92-6111-4cee-9bec-8cc93af7f9fe",
+        "LabelID" : "course_name",
+        "I18nResourceInfoPrefix" : ".course_name",
+        "ChildAssociations" : [ ],
+        "Code" : "course_name",
+        "Name" : "课程名称",
+        "MDataType" : "String",
+        "Length" : 36,
+        "IsRequire" : true,
+        "EnableRtrim" : true,
+        "Mapping" : {
+          "MapType" : "Element",
+          "TargetMetadataId" : "a780589e-5fce-49c0-a5e9-aacca560c654",
+          "TargetObjId" : "aa3b410e-c182-469d-8dc0-32a564f13eee",
+          "TargetObjectId" : "7c61662b-7b22-4c30-a37f-608f7ddb316a",
+          "TargetElementId" : "aa3b410e-c182-469d-8dc0-32a564f13eee"
+        }
+      }, {
+        "ID" : "0341962c-676b-486f-bc65-8bbeba6936f2",
+        "LabelID" : "credits",
+        "I18nResourceInfoPrefix" : ".credits",
+        "ChildAssociations" : [ ],
+        "Code" : "credits",
+        "Name" : "课程学分",
+        "MDataType" : "String",
+        "Length" : 36,
+        "IsRequire" : true,
+        "EnableRtrim" : true,
+        "Mapping" : {
+          "MapType" : "Element",
+          "TargetMetadataId" : "a780589e-5fce-49c0-a5e9-aacca560c654",
+          "TargetObjId" : "d79b50d9-d7b3-4d40-a1b2-1b6b1b285210",
+          "TargetObjectId" : "7c61662b-7b22-4c30-a37f-608f7ddb316a",
+          "TargetElementId" : "d79b50d9-d7b3-4d40-a1b2-1b6b1b285210"
+        }
+      }, {
+        "ID" : "ebeec1ca-cfce-484e-a610-f9d12f18e809",
+        "LabelID" : "teacher_id",
+        "I18nResourceInfoPrefix" : ".teacher_id",
+        "ChildAssociations" : [ ],
+        "Code" : "teacher_id",
+        "Name" : "授课教师",
+        "MDataType" : "String",
+        "Length" : 36,
+        "IsRequire" : true,
+        "EnableRtrim" : true,
+        "Mapping" : {
+          "MapType" : "Element",
+          "TargetMetadataId" : "a780589e-5fce-49c0-a5e9-aacca560c654",
+          "TargetObjId" : "97e24f33-4387-4817-8b53-074b4c5b59e0",
+          "TargetObjectId" : "7c61662b-7b22-4c30-a37f-608f7ddb316a",
+          "TargetElementId" : "97e24f33-4387-4817-8b53-074b4c5b59e0"
+        }
+      }, {
+        "ID" : "96679dbf-b3dd-4784-b1cb-52f78c2e792b",
+        "LabelID" : "max_students",
+        "I18nResourceInfoPrefix" : ".max_students",
+        "ChildAssociations" : [ ],
+        "Code" : "max_students",
+        "Name" : "最大选课人数",
+        "MDataType" : "String",
+        "Length" : 36,
+        "EnableRtrim" : true,
+        "Mapping" : {
+          "MapType" : "Element",
+          "TargetMetadataId" : "a780589e-5fce-49c0-a5e9-aacca560c654",
+          "TargetObjId" : "573086f1-f183-4abf-9a32-a5de7b24de88",
+          "TargetObjectId" : "7c61662b-7b22-4c30-a37f-608f7ddb316a",
+          "TargetElementId" : "573086f1-f183-4abf-9a32-a5de7b24de88"
+        }
+      }, {
+        "ID" : "6a1697ee-4e24-4e13-a9a4-0f0b86a06690",
+        "LabelID" : "semester",
+        "I18nResourceInfoPrefix" : ".semester",
+        "ChildAssociations" : [ ],
+        "Code" : "semester",
+        "Name" : "课程学期",
+        "MDataType" : "String",
+        "Length" : 36,
+        "EnableRtrim" : true,
+        "Mapping" : {
+          "MapType" : "Element",
+          "TargetMetadataId" : "a780589e-5fce-49c0-a5e9-aacca560c654",
+          "TargetObjId" : "f569a757-7ff3-480d-b3f9-ba4dd1d16718",
+          "TargetObjectId" : "7c61662b-7b22-4c30-a37f-608f7ddb316a",
+          "TargetElementId" : "f569a757-7ff3-480d-b3f9-ba4dd1d16718"
+        }
+      }, {
+        "ID" : "76bcff98-05c1-4881-89f9-73bebbad581d",
+        "LabelID" : "schedule",
+        "I18nResourceInfoPrefix" : ".schedule",
+        "ChildAssociations" : [ ],
+        "Code" : "schedule",
+        "Name" : "课程安排",
+        "MDataType" : "String",
+        "Length" : 36,
+        "IsRequire" : true,
+        "EnableRtrim" : true,
+        "Mapping" : {
+          "MapType" : "Element",
+          "TargetMetadataId" : "a780589e-5fce-49c0-a5e9-aacca560c654",
+          "TargetObjId" : "050b41cd-ecc9-4be8-b810-139d924dffb3",
+          "TargetObjectId" : "7c61662b-7b22-4c30-a37f-608f7ddb316a",
+          "TargetElementId" : "050b41cd-ecc9-4be8-b810-139d924dffb3"
+        }
+      }, {
+        "ID" : "f76222cd-adfc-4678-98ca-9c99758462aa",
+        "LabelID" : "State",
+        "I18nResourceInfoPrefix" : ".State",
+        "ChildAssociations" : [ ],
+        "Code" : "State",
+        "Name" : "课程状态",
+        "ObjectType" : "Enum",
+        "MDataType" : "String",
+        "Length" : 36,
+        "EnableRtrim" : true,
+        "EnumIndexType" : 1,
+        "ContainEnumValues" : [ {
+          "I18nResourceInfoPrefix" : "Inspur.GS.AppOrder.DF.Organization.Organization.Back.Course.Course.State.jxz",
+          "Index" : 0,
+          "IsDefaultEnum" : true,
+          "StringIndex" : "jxz",
+          "Value" : "jxz",
+          "Name" : "进行中"
+        }, {
+          "I18nResourceInfoPrefix" : "Inspur.GS.AppOrder.DF.Organization.Organization.Back.Course.Course.State.yjs",
+          "Index" : 1,
+          "IsDefaultEnum" : false,
+          "StringIndex" : "yjs",
+          "Value" : "yjs",
+          "Name" : "已结束"
+        } ],
+        "Mapping" : {
+          "MapType" : "Element",
+          "TargetMetadataId" : "a780589e-5fce-49c0-a5e9-aacca560c654",
+          "TargetObjId" : "ceaa7c3c-33c1-47a2-8047-5859f2d53a79",
+          "TargetObjectId" : "7c61662b-7b22-4c30-a37f-608f7ddb316a",
+          "TargetElementId" : "ceaa7c3c-33c1-47a2-8047-5859f2d53a79"
+        }
+      } ],
+      "RefObjectName" : "e6f0042e-a943-470a-9acd-a02633c118a9",
+      "ColumnGenerateID" : {
+        "ColumnParameters" : [ ],
+        "ElementID" : "fcec6e8f-3cd4-43e0-9ea7-06dae94c99a7",
+        "GenerateType" : "Guid"
+      },
+      "BelongModelID" : "1dd7398e-c37a-4f00-af53-aaf4b62ad84b",
+      "Mapping" : {
+        "MapType" : "BEObject",
+        "TargetMetadataId" : "a780589e-5fce-49c0-a5e9-aacca560c654",
+        "TargetObjId" : "7c61662b-7b22-4c30-a37f-608f7ddb316a"
+      }
+    },
+    "Variables" : {
+      "ID" : "3e708693-b1e2-40bb-9cc1-dc11fe4ddee7",
+      "Code" : "Course_hlpVariable",
+      "Name" : "课程_ViewObject变量",
+      "I18nResourceInfoPrefix" : ""
+    },
+    "ConvertMsg" : false,
+    "Mapping" : {
+      "MapType" : "BizEntity",
+      "TargetMetadataId" : "a780589e-5fce-49c0-a5e9-aacca560c654",
+      "TargetObjId" : "a780589e-5fce-49c0-a5e9-aacca560c654"
+    },
+    "ExtendProperties" : { }
+  },
+  "ExtendRule" : null,
+  "RelativePath" : "AppOrder/DF/Organization/bo-organization-front/metadata/lookups",
+  "ExtendProperty" : "",
+  "Extended" : false,
+  "PreviousVersion" : null,
+  "Version" : null,
+  "Properties" : null
+}

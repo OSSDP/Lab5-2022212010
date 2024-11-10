@@ -1,0 +1,63 @@
+{
+  "Header" : {
+    "Code" : "predefinePageflow",
+    "Type" : "PageFlowMetadata",
+    "NameSpace" : "Inspur.GS.AppOrder.Order.SaleOrder.SaleOrder.Front",
+    "CertId" : null,
+    "Name" : "predefinePageflow",
+    "FileName" : "predefinePageflow.pf",
+    "BizobjectID" : "110200f5-ac63-a59d-8b68-324ba954cd9d",
+    "Language" : null,
+    "Extendable" : false,
+    "ID" : "01dfad4c-83c9-45b1-b831-f4357677c159",
+    "IsTranslating" : false
+  },
+  "Refs" : [ ],
+  "Content" : {
+    "code" : null,
+    "name" : null,
+    "id" : "01dfad4c-83c9-45b1-b831-f4357677c159",
+    "project" : {
+      "name" : "bo-saleorder-front"
+    },
+    "pages" : [ {
+      "id" : "cb6fdd29-fa4c-4d2e-a4f4-8aca260f000f",
+      "code" : "SaleOrderList",
+      "name" : "业务订单列表",
+      "fileName" : "SaleOrderList.frm",
+      "relativePath" : "AppOrder/Order/SaleOrder/bo-saleorder-front/metadata/components",
+      "formUri" : null,
+      "routeUri" : "SaleOrderList",
+      "routeParams" : null,
+      "forceDynamicForm" : false
+    }, {
+      "id" : "9983be53-6bea-4050-b216-6069e270d44f",
+      "code" : "SaleOrderCard",
+      "name" : "订单维护",
+      "fileName" : "SaleOrderCard.frm",
+      "relativePath" : "AppOrder/Order/SaleOrder/bo-saleorder-front/metadata/components",
+      "formUri" : "9983be53-6bea-4050-b216-6069e270d44f",
+      "routeUri" : "SaleOrderCard",
+      "routeParams" : null,
+      "forceDynamicForm" : false
+    } ],
+    "entry" : "SaleOrderList",
+    "routes" : null,
+    "appCode" : "SaleOrderCard",
+    "appName" : "订单维护",
+    "publishes" : [ {
+      "id" : "21f6f7ab-cb0b-44df-97db-65fbf944705a",
+      "entry" : "9983be53-6bea-4050-b216-6069e270d44f"
+    }, {
+      "id" : "a574d5d8-aec3-431f-9a9e-4f385541cab1",
+      "entry" : "cb6fdd29-fa4c-4d2e-a4f4-8aca260f000f"
+    } ]
+  },
+  "ExtendRule" : null,
+  "RelativePath" : "AppOrder/Order/SaleOrder/bo-saleorder-front/metadata/route",
+  "ExtendProperty" : "",
+  "Extended" : false,
+  "PreviousVersion" : null,
+  "Version" : null,
+  "Properties" : null
+}

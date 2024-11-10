@@ -1,0 +1,15 @@
+{
+  "AppCode" : "apporder",
+  "ServiceUnitCode" : "df",
+  "BizobjectCode" : "Organization",
+  "BizobjectID" : "e410e4b3-cb73-6d38-ab0e-626b56ccf709",
+  "ProjectNameSpace" : "Inspur.GS.AppOrder.DF.Organization.Organization.Back",
+  "SuDeploymentPath" : "apps/apporder/df",
+  "MetadataProjectName" : "bo-Organization-Back",
+  "MetadataPackageName" : "Inspur.GS.AppOrder.DF.Organization.Organization.Back",
+  "SuConfigDeploymentPath" : null,
+  "ProjectType" : "backend",
+  "ProjectExtendItem" : [ {
+    "codelanguage" : "java"
+  } ]
+}

@@ -1,0 +1,15 @@
+{
+  "AppCode" : "AppOrder",
+  "ServiceUnitCode" : "DF",
+  "BizobjectCode" : "Organization",
+  "BizobjectID" : "e410e4b3-cb73-6d38-ab0e-626b56ccf709",
+  "ProjectNameSpace" : "Inspur.GS.AppOrder.DF.Organization.Organization.Front",
+  "SuDeploymentPath" : "apps/apporder/df",
+  "MetadataProjectName" : "bo-Organization-Front",
+  "MetadataPackageName" : "Inspur.GS.AppOrder.DF.Organization.Organization.Front",
+  "SuConfigDeploymentPath" : null,
+  "ProjectType" : "frontend",
+  "ProjectExtendItem" : [ {
+    "codelanguage" : "java"
+  } ]
+}

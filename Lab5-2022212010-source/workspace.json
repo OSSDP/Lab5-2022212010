@@ -1,0 +1,63 @@
+{
+  "Version" : "1.0.1",
+  "EnvironmentSetting" : {
+    "Environment" : {
+      "DevRootPath" : "D:/inbuilder_community_2406_x86_64_build20240630/inbuilder_community_2406_x86_64_build20240630/demo/workspace_demo"
+    },
+    "MetadataIndexServer" : {
+      "Ip" : "10.110.85.182",
+      "Port" : "5002"
+    },
+    "Deployment" : [ {
+      "Name" : "current server",
+      "Port" : 0,
+      "DebugPort" : 0,
+      "ServerPath" : "",
+      "Id" : "31d35ffd-a50e-4d1f-b5a1-9a22bed488cf",
+      "Tags" : null,
+      "ProcessID" : 0,
+      "ProcessName" : "",
+      "Status" : null,
+      "TechStack" : null,
+      "MockItem" : null,
+      "DbServer" : "",
+      "DbPort" : null,
+      "DbDatabase" : "",
+      "DbUserName" : "",
+      "DbPassword" : "",
+      "DbType" : 0,
+      "Type" : "local",
+      "default" : true
+    } ],
+    "TechnologyStack" : null,
+    "MavenDebugMode" : false,
+    "Vcs" : {
+      "Name" : "mKZp37Z+EMiGCE4nz2P9lQ==",
+      "Password" : "R4C3kF2wiO3CFh83oE6GUA=="
+    },
+    "extractRelativeDependencyMode" : "NOT_EXTRACT_DEPEND"
+  },
+  "DebugServerInfo" : [ {
+    "Name" : "current server",
+    "Port" : 5200,
+    "DebugPort" : 0,
+    "ServerPath" : "",
+    "Id" : "31d35ffd-a50e-4d1f-b5a1-9a22bed488cf",
+    "Tags" : null,
+    "ProcessID" : 13852,
+    "ProcessName" : "",
+    "Status" : "IsRunning",
+    "TechStack" : null,
+    "MockItem" : null,
+    "DbServer" : "",
+    "DbPort" : null,
+    "DbDatabase" : "",
+    "DbUserName" : "",
+    "DbPassword" : "",
+    "DbType" : 2,
+    "Type" : "local",
+    "default" : true
+  } ],
+  "ProjectConfiguration" : [ ],
+  "RelaSUCodeSet" : [ ]
+}

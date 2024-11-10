@@ -1,0 +1,309 @@
+{
+  "Header" : {
+    "Code" : "Teacher",
+    "Type" : "HelpMetadata",
+    "NameSpace" : "Inspur.GS.AppOrder.DF.Organization.Organization.Front",
+    "CertId" : null,
+    "Name" : "老师",
+    "FileName" : "Teacher.hlp",
+    "BizobjectID" : "e410e4b3-cb73-6d38-ab0e-626b56ccf709",
+    "Language" : null,
+    "Extendable" : false,
+    "ID" : "6a86929f-24af-4a00-817c-9f0dba3b7ebb",
+    "IsTranslating" : false
+  },
+  "Refs" : [ {
+    "DependentMetadata" : {
+      "ID" : "28c044a6-ca72-4114-8a7a-0585bb253c17",
+      "CertId" : null,
+      "NameSpace" : "Inspur.GS.AppOrder.DF.Organization.Organization.Front",
+      "Code" : "Teacher_hlp",
+      "Name" : "老师_ViewObject",
+      "Type" : "GSPViewModel",
+      "BizobjectID" : "e410e4b3-cb73-6d38-ab0e-626b56ccf709"
+    }
+  }, {
+    "DependentMetadata" : {
+      "ID" : "f3ab2544-de2b-4dba-a82c-9e5b1bf327a5",
+      "CertId" : null,
+      "NameSpace" : "Inspur.GS.AppOrder.DF.Organization.Organization.Front",
+      "Code" : "Teacher.hlp",
+      "Name" : "Teacher.hlp",
+      "Type" : "ResourceMetadata",
+      "BizobjectID" : "e410e4b3-cb73-6d38-ab0e-626b56ccf709"
+    }
+  } ],
+  "Content" : {
+    "code" : "Teacher",
+    "name" : "老师",
+    "version" : "0.0.2",
+    "id" : "6a86929f-24af-4a00-817c-9f0dba3b7ebb",
+    "title" : "老师",
+    "idField" : "id",
+    "idFieldName" : "主键",
+    "textField" : "name",
+    "textFieldName" : "教师姓名",
+    "valueField" : "id",
+    "valueFieldName" : "主键",
+    "displayType" : "List",
+    "description" : "",
+    "dataSource" : {
+      "columns" : [ {
+        "field" : "name",
+        "title" : "教师姓名",
+        "width" : 100,
+        "fieldPath" : "name",
+        "fieldType" : "StringType",
+        "supportSearch" : true,
+        "align" : "left",
+        "formatter" : null,
+        "sortable" : false,
+        "order" : null,
+        "precision" : 0,
+        "hAlign" : "left"
+      }, {
+        "field" : "id",
+        "title" : "主键",
+        "width" : 100,
+        "fieldPath" : "ID",
+        "fieldType" : "StringType",
+        "supportSearch" : true,
+        "align" : "left",
+        "formatter" : null,
+        "sortable" : false,
+        "order" : null,
+        "precision" : 0,
+        "hAlign" : "left"
+      }, {
+        "field" : "teacher_id",
+        "title" : "教师工号",
+        "width" : 100,
+        "fieldPath" : "teacher_id",
+        "fieldType" : "StringType",
+        "supportSearch" : true,
+        "align" : "left",
+        "formatter" : null,
+        "sortable" : false,
+        "order" : null,
+        "precision" : 0,
+        "hAlign" : "left"
+      } ],
+      "sourceType" : "BE",
+      "sourcePath" : "AppOrder/DF/Organization/bo-organization-back/metadata/be/Teacher.be",
+      "sourceName" : "教师表",
+      "sourceId" : "ba3f6b84-9c87-4647-8e95-5778bf0d688f",
+      "uri" : "AppOrder/DF/Organization/bo-organization-front/metadata/lookups/Teacher_hlp.vo",
+      "vmCode" : "Inspur.GS.AppOrder.DF.Organization.Organization.Front.Vo.Teacher_hlp",
+      "voSourceId" : "28c044a6-ca72-4114-8a7a-0585bb253c17",
+      "conditions" : [ ],
+      "sorts" : [ ],
+      "pageInfo" : {
+        "pageList" : [ 10, 20, 30, 50 ],
+        "pageSize" : 20,
+        "pageIndex" : 0,
+        "enablePager" : true
+      },
+      "treeInfo" : {
+        "loadDataType" : "async",
+        "layerType" : "pathcode",
+        "dataField" : "",
+        "pathField" : "path",
+        "layerField" : "layer",
+        "isDetailField" : "isDetail",
+        "onlySelectLeaf" : false,
+        "parentField" : "parentElement",
+        "treeDataIsInit" : false
+      }
+    },
+    "navigation" : null,
+    "languages" : null,
+    "schema" : {
+      "main" : {
+        "eapiId" : null,
+        "eapiCode" : null,
+        "eapiName" : null,
+        "eapiNameSpace" : null,
+        "voPath" : null,
+        "voNameSpace" : null,
+        "sourceType" : "vo",
+        "code" : "Teacher_hlp",
+        "variables" : [ ],
+        "sourceUri" : null,
+        "name" : "老师_ViewObject",
+        "id" : "28c044a6-ca72-4114-8a7a-0585bb253c17",
+        "entities" : [ {
+          "code" : "Teacher",
+          "name" : "教师表",
+          "id" : "ba930249-5c84-4d76-8c90-8507dd82a1a4",
+          "type" : {
+            "$type" : "EntityType",
+            "primary" : "id",
+            "fields" : [ {
+              "$type" : "SimpleField",
+              "code" : "ID",
+              "originalId" : "0db225cb-b29d-4663-b690-6f515fd3c2e2",
+              "bindingPath" : "id",
+              "bindingField" : "id",
+              "name" : "主键",
+              "id" : "0db225cb-b29d-4663-b690-6f515fd3c2e2_ID",
+              "type" : {
+                "$type" : "StringType"
+              },
+              "path" : "ID",
+              "label" : "id",
+              "parentPath" : ""
+            }, {
+              "$type" : "SimpleField",
+              "code" : "Version",
+              "originalId" : "6c73163e-d970-4cf4-b2b4-ab1874f7d00c",
+              "bindingPath" : "version",
+              "bindingField" : "version",
+              "name" : "版本",
+              "id" : "6c73163e-d970-4cf4-b2b4-ab1874f7d00c_Version",
+              "type" : {
+                "$type" : "DateTimeType"
+              },
+              "path" : "Version",
+              "label" : "version",
+              "parentPath" : ""
+            }, {
+              "$type" : "SimpleField",
+              "code" : "teacher_id",
+              "originalId" : "a097901f-ae56-4d15-9ba4-3a8252d1a1d8",
+              "bindingPath" : "teacher_id",
+              "bindingField" : "teacher_id",
+              "name" : "教师工号",
+              "id" : "a097901f-ae56-4d15-9ba4-3a8252d1a1d8_teacher_id",
+              "type" : {
+                "$type" : "StringType"
+              },
+              "path" : "teacher_id",
+              "label" : "teacher_id",
+              "parentPath" : ""
+            }, {
+              "$type" : "SimpleField",
+              "code" : "name",
+              "originalId" : "8e11dcb3-8c83-46c4-a52b-4646037d9bf8",
+              "bindingPath" : "name",
+              "bindingField" : "name",
+              "name" : "教师姓名",
+              "id" : "8e11dcb3-8c83-46c4-a52b-4646037d9bf8_name",
+              "type" : {
+                "$type" : "StringType"
+              },
+              "path" : "name",
+              "label" : "name",
+              "parentPath" : ""
+            }, {
+              "$type" : "SimpleField",
+              "code" : "department",
+              "originalId" : "8ef579d9-1a0a-4b73-a350-bc3e3e66ec24",
+              "bindingPath" : "department",
+              "bindingField" : "department",
+              "name" : "所在院系",
+              "id" : "8ef579d9-1a0a-4b73-a350-bc3e3e66ec24_department",
+              "type" : {
+                "$type" : "EnumType",
+                "valueType" : {
+                  "$type" : "StringType",
+                  "length" : 36,
+                  "name" : "String",
+                  "displayName" : "字符串"
+                },
+                "enumValues" : [ {
+                  "disabled" : false,
+                  "name" : "计算机学院",
+                  "value" : "cs"
+                }, {
+                  "disabled" : false,
+                  "name" : "数学学院",
+                  "value" : "math"
+                }, {
+                  "disabled" : false,
+                  "name" : "中文学院",
+                  "value" : "Chinese"
+                }, {
+                  "disabled" : false,
+                  "name" : "法学院",
+                  "value" : "falv"
+                } ]
+              },
+              "path" : "department",
+              "label" : "department",
+              "parentPath" : ""
+            }, {
+              "$type" : "SimpleField",
+              "code" : "password",
+              "originalId" : "de041af2-47d8-446c-be43-2e30b4469120",
+              "bindingPath" : "password",
+              "bindingField" : "password",
+              "name" : "密码",
+              "id" : "de041af2-47d8-446c-be43-2e30b4469120_password",
+              "type" : {
+                "$type" : "StringType"
+              },
+              "path" : "password",
+              "label" : "password",
+              "parentPath" : ""
+            }, {
+              "$type" : "ComplexField",
+              "code" : "email",
+              "originalId" : "5ff387dc-b06f-4763-9086-135abdb73422",
+              "bindingPath" : "email",
+              "bindingField" : "email",
+              "name" : "邮箱",
+              "id" : "5ff387dc-b06f-4763-9086-135abdb73422_email",
+              "type" : {
+                "$type" : "ObjectType",
+                "fields" : [ {
+                  "$type" : "SimpleField",
+                  "require" : false,
+                  "multiLanguage" : false,
+                  "editor" : {
+                    "$type" : "TextBox"
+                  },
+                  "defaultValue" : "",
+                  "readonly" : false,
+                  "code" : "Email",
+                  "originalId" : "7b81be0f-fa0f-456c-9c58-7ab52433e9b2",
+                  "bindingPath" : "email.email",
+                  "bindingField" : "email_Email",
+                  "name" : "邮箱",
+                  "id" : "5ff387dc-fa0f-456c-9c58-7ab52433e9b2_email.Email",
+                  "type" : {
+                    "$type" : "StringType",
+                    "length" : 500,
+                    "name" : "String",
+                    "displayName" : "字符串"
+                  },
+                  "path" : "email.Email",
+                  "label" : "email",
+                  "parentPath" : "email"
+                } ]
+              },
+              "path" : "email",
+              "label" : "email",
+              "parentPath" : ""
+            } ],
+            "entities" : [ ],
+            "name" : "Teacher",
+            "displayName" : "教师表"
+          },
+          "label" : "teachers"
+        } ],
+        "extendProperties" : {
+          "enableStdTimeFormat" : true
+        }
+      }
+    },
+    "initDataSource" : true,
+    "createTime" : "2024-11-08 20:58:24"
+  },
+  "ExtendRule" : null,
+  "RelativePath" : "AppOrder/DF/Organization/bo-organization-front/metadata/lookups",
+  "ExtendProperty" : "",
+  "Extended" : false,
+  "PreviousVersion" : null,
+  "Version" : null,
+  "Properties" : null
+}
